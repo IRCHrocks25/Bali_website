@@ -9,12 +9,23 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { content } = usePageContent();
+  const defaultMenuPdfUrl = 'https://res.cloudinary.com/dcuswyfur/image/upload/v1763057740/New_Menu_Food_A3_-2_qg42to.pdf';
+  const menuPdfUrl = content?.menu_pdf_url || defaultMenuPdfUrl;
 
   const navLinks = [
     { name: content?.nav_about || 'About', href: '#about' },
     { name: content?.nav_menu || 'Menu', href: '#menu' },
     { name: content?.nav_events || 'Events', href: '#events' },
     { name: content?.nav_contact || 'Contact', href: '#contact' },
+    ...(menuPdfUrl
+      ? [
+          {
+            name: content?.nav_menu_download || 'View Menu PDF',
+            href: menuPdfUrl,
+            external: true,
+          },
+        ]
+      : []),
   ];
 
   useEffect(() => {
@@ -26,9 +37,14 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  const scrollToSection = (e, href) => {
+  const handleNavClick = (e, link) => {
+    if (link.external) {
+      setIsOpen(false);
+      return;
+    }
+
     e.preventDefault();
-    const section = document.querySelector(href);
+    const section = document.querySelector(link.href);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
       setIsOpen(false);
@@ -70,7 +86,9 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
+                onClick={(e) => handleNavClick(e, link)}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
               >
                 {link.name}
@@ -111,7 +129,9 @@ const Navbar = () => {
                 <motion.a
                   key={link.name}
                   href={link.href}
-                  onClick={(e) => scrollToSection(e, link.href)}
+                  onClick={(e) => handleNavClick(e, link)}
+                  target={link.external ? '_blank' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
                   className="text-2xl font-cormorant text-foreground hover:text-primary"
                   variants={mobileLinkVariants}
                 >

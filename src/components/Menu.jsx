@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { UtensilsCrossed } from 'lucide-react';
+import { UtensilsCrossed, FileText, Sparkles } from 'lucide-react';
 import { supabase } from '@/lib/customSupabaseClient';
 import { usePageContent } from '@/hooks/usePageContent';
+import { Button } from './ui/button';
 
 const Menu = () => {
   const { content, loading: contentLoading } = usePageContent();
@@ -33,6 +34,29 @@ const Menu = () => {
     const orderB = menuItems.find(item => item.category === b)?.order || 0;
     return orderA - orderB;
   });
+
+  const menuPdfCards = [
+    {
+      title: content?.menu_pdf_primary_title || 'New Menu Food',
+      subtitle:
+        content?.menu_pdf_primary_subtitle ||
+        'Explore the latest culinary creations from our chef.',
+      url:
+        content?.menu_pdf_primary_url ||
+        'https://res.cloudinary.com/dcuswyfur/image/upload/v1763057740/New_Menu_Food_A3_-2_qg42to.pdf',
+      cta: content?.menu_pdf_primary_cta || 'Download Menu',
+    },
+    {
+      title: content?.menu_pdf_secondary_title || 'Signature Drinks & Bites',
+      subtitle:
+        content?.menu_pdf_secondary_subtitle ||
+        'Sip and savor our lounge favourites and handcrafted cocktails.',
+      url:
+        content?.menu_pdf_secondary_url ||
+        'https://res.cloudinary.com/dcuswyfur/image/upload/v1763057741/menu_12_h2hnfu.pdf',
+      cta: content?.menu_pdf_secondary_cta || 'View Menu',
+    },
+  ].filter((card) => Boolean(card.url));
 
 
   const containerVariants = {
@@ -80,6 +104,62 @@ const Menu = () => {
           {content?.menu_subtitle || 'A symphony of French elegance and Balinese soul.'}
         </p>
       </motion.div>
+
+      {menuPdfCards.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12"
+        >
+          {menuPdfCards.map((card, index) => (
+            <div
+              key={`${card.title}-${index}`}
+              className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-primary/10 via-background/60 to-background/30 p-[1px]"
+            >
+              <div className="relative h-full rounded-3xl bg-background/90 p-6 sm:p-8 backdrop-blur flex flex-col gap-6">
+                <div className="absolute -top-16 -right-12 h-44 w-44 rounded-full bg-primary/30 blur-3xl pointer-events-none" />
+                <div className="absolute top-4 right-4 text-primary drop-shadow-md">
+                  <Sparkles className="h-6 w-6" />
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="rounded-2xl bg-primary/15 p-3">
+                    <FileText className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.35em] text-primary/70 mb-1">
+                      Chef’s Selection
+                    </p>
+                    <h3 className="text-2xl font-semibold text-foreground">{card.title}</h3>
+                  </div>
+                </div>
+                <p className="text-muted-foreground/90 leading-relaxed">
+                  {card.subtitle}
+                </p>
+                <div className="mt-auto flex flex-wrap items-center gap-4 pt-2">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-shadow"
+                  >
+                    <a href={card.url} target="_blank" rel="noopener noreferrer">
+                      {card.cta}
+                    </a>
+                  </Button>
+                  <a
+                    href={card.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary/80 hover:text-primary underline underline-offset-4 transition-colors duration-200"
+                  >
+                    Preview in new tab
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      )}
 
       <motion.div
         variants={containerVariants}
