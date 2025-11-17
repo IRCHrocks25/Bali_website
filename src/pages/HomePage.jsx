@@ -10,6 +10,7 @@ import MenuSection from '@/components/MenuSection';
 import UgcVideoSection from '@/components/UgcVideoSection';
 import EventsSection from '@/components/EventsSection';
 import ReviewsSection from '@/components/ReviewsSection';
+import ArticleSection from '@/components/ArticleSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import Menu from '@/components/Menu';
@@ -39,6 +40,7 @@ const HomePage = () => {
           <MenuSection onMenuClick={() => setIsMenuOpen(true)} />
           <UgcVideoSection />
           <EventsSection content={content} />
+          <ArticleSection />
           <ReviewsSection />
           <ContactSection />
         </main>

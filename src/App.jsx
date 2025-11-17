@@ -10,6 +10,8 @@ import { TooltipProvider } from '@/components/ui/tooltip'; // Import TooltipProv
 const HomePage = React.lazy(() => import('@/pages/HomePage'));
 const LoginPage = React.lazy(() => import('@/pages/LoginPage'));
 const AdminPage = React.lazy(() => import('@/pages/AdminPage'));
+const ArticlesPage = React.lazy(() => import('@/pages/ArticlesPage'));
+const ArticleDetailPage = React.lazy(() => import('@/pages/ArticleDetailPage'));
 const ProtectedRoute = React.lazy(() => import('@/components/ProtectedRoute'));
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
                 <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/login" element={<LoginPage />} />
+                  <Route path="/articles" element={<ArticlesPage />} />
+                  <Route path="/articles/:id" element={<ArticleDetailPage />} />
                   <Route 
                     path="/admin"
                     element={

@@ -99,4 +99,43 @@
   .text-shadow-lg {
     text-shadow: 0 4px 10px rgba(0,0,0,0.5);
   }
+  .article-content {
+    @apply text-foreground/90;
+  }
+  .article-content h1 {
+    @apply font-cormorant text-4xl md:text-5xl font-bold text-foreground mb-6;
+  }
+  .article-content h2 {
+    @apply font-cormorant text-3xl md:text-4xl font-bold text-foreground mt-8 mb-4;
+  }
+  .article-content p {
+    @apply text-base md:text-lg leading-relaxed mb-4;
+  }
+  .article-content strong {
+    @apply font-semibold text-foreground;
+  }
+  .article-content a {
+    @apply text-primary hover:underline;
+  }
+  .article-content dl {
+    @apply space-y-4;
+  }
+  .article-content dt {
+    @apply font-semibold text-foreground mb-2;
+  }
+  .article-content dd {
+    @apply text-foreground/80 ml-4 mb-4;
+  }
+  .article-content article {
+    @apply space-y-6;
+  }
+  .article-content header {
+    @apply mb-6;
+  }
+  .article-content section {
+    @apply my-8;
+  }
+  .article-content footer {
+    @apply mt-8 pt-6 border-t border-border;
+  }
 }
