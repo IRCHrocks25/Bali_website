@@ -1717,7 +1717,7 @@ const ArticleDetailPage = () => {
         </Helmet>
         <div className="bg-background text-foreground font-sans min-h-screen flex flex-col">
           <Navbar />
-          <main className="flex-1 flex items-center justify-center py-20 px-4">
+          <main className="flex-1 flex items-center justify-center px-4 min-h-screen">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
