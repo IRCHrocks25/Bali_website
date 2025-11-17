@@ -1644,6 +1644,167 @@ const staticArticles = [
     </article>
   `,
   },
+  {
+    id: "bali-article-28",
+    title: "Kerobokan Fine Dining | Elegant Restaurants and Luxury Cuisine",
+    excerpt:
+      "Explore Kerobokan's finest dining experiences. Discover luxury restaurants, French-inspired cuisine, and intimate settings that define Bali's culinary excellence.",
+    description:
+      "Kerobokan is where Bali slows down — trading the rush of Seminyak's nightlife for elegance, space, and understated luxury. It's a place where fine dining takes on a quieter confidence, where chefs craft with intention, and where every plate feels personal.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Fine Dining",
+    published_at: new Date("2025-11-16").toISOString(), // November 16, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Experience Fine Dining in Kerobokan?</h1>
+      </header>
+      
+      <p>Kerobokan is where Bali slows down — trading the rush of Seminyak's nightlife for elegance, space, and understated luxury. It's a place where <strong>fine dining</strong> takes on a quieter confidence, where chefs craft with intention, and where every plate feels personal. The area may be calm, but beneath its relaxed surface lies a collection of restaurants that rival the best in Southeast Asia.</p>
+      <p>For travelers who appreciate the art of dining — the kind that pairs detail with atmosphere — Kerobokan delivers experiences that are both grounded and indulgent.</p>
+
+      <h2>The Essence of Fine Dining in Kerobokan</h2>
+      <p>Unlike the louder venues of neighboring Seminyak, Kerobokan's fine dining scene thrives on intimacy. Restaurants here are hidden among rice fields and tropical courtyards, designed for guests who prefer conversation over chaos.</p>
+      <p>Start your evening at Sardine, a beloved restaurant surrounded by emerald-green paddies. The open-air bamboo pavilion sets the tone for an evening that's equal parts natural and refined. The menu, centered around freshly caught seafood, is both French-inspired and distinctly Balinese in its simplicity.</p>
+      <p>For something more avant-garde, visit Nūde Bali, known for its creative plating and global fusion. Every dish tells a story — from delicate foie gras paired with tropical fruits to charcoal-grilled lobster drizzled in herb butter. Then there's <strong>The Club Bali</strong>, Kerobokan's modern fusion destination where French fine dining meets live entertainment and craft cocktails.</p>
+      <p>If you want to plan your next dinner adventure, browse Luxury Asia Insider's restaurant guide or explore Bali Eater's fine dining listings for curated recommendations on where to experience world-class dining in Bali.</p>
+
+      <h2>Why Kerobokan's Fine Dining Feels So Special</h2>
+      <p>Kerobokan has mastered the balance between sophistication and serenity. You won't find flashing lights or noisy crowds here — just thoughtful service, exquisite design, and cuisine that celebrates both culture and craft.</p>
+      <p>Many chefs source directly from nearby farms, creating menus that evolve with the seasons. Wine pairings are selected with care, desserts are handcrafted, and every detail — from the table setting to the final espresso — speaks of refinement.</p>
+      <p>After dinner, guests can transition effortlessly into Bali's nightlife or return to a private villa for drinks under the stars. For an event that blends gourmet dining with music and ambiance, take a look at our feature on <a href="https://theclubbali.com/french-food-and-dj-bali">French Food and DJs in Bali</a>.</p>
+      <p>If you're planning a special evening, reach out to the team at The Club Bali through their official contact page. Their expert planners can arrange bespoke tasting menus, private dining rooms, and even live DJ sets — making it one of the top destinations for <strong>fine dining in Bali</strong>.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>What type of cuisine is popular in Kerobokan's fine dining scene?</strong></dt>
+          <dd>Mostly French-Asian fusion, focusing on local ingredients and Western techniques.</dd>
+
+          <dt><strong>Are reservations necessary?</strong></dt>
+          <dd>Yes, particularly during the dry season (May to October) when Bali's tourism peaks.</dd>
+
+          <dt><strong>What's the best time to dine?</strong></dt>
+          <dd>Arrive around sunset for golden-hour views across the rice paddies.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Conclusion</h2>
+        <p>Kerobokan's <strong>fine dining</strong> is more than taste — it's texture, atmosphere, and emotion combined. It's where every bite feels deliberate and every moment unfolds slowly. For travelers who want to experience Bali's more refined side, The Club Bali's luxury dining experiences offer the perfect blend of sophistication, intimacy, and island charm.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-29",
+    title: "French Restaurant Seminyak | Fine Dining and Nightlife Fusion",
+    excerpt:
+      "Experience Seminyak's best French restaurants blending fine dining, ocean views, and vibrant nightlife. Taste French elegance with a Balinese touch.",
+    description:
+      "Seminyak is where Bali's culinary soul meets modern sophistication. Its streets are lined with restaurants that merge European refinement with tropical ease, and none do it better than the French establishments tucked among its palm-lined avenues. Here, the art of dining is elevated to something almost poetic — candlelight flickers over fine glassware, aromas of butter and herbs fill the air, and the evening feels suspended in time.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "French Cuisine",
+    published_at: new Date("2025-11-17").toISOString(), // November 17, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Find the Best French Restaurant in Seminyak?</h1>
+      </header>
+      
+      <p>Seminyak is where Bali's culinary soul meets modern sophistication. Its streets are lined with restaurants that merge European refinement with tropical ease, and none do it better than the <strong>French establishments</strong> tucked among its palm-lined avenues. Here, the art of dining is elevated to something almost poetic — candlelight flickers over fine glassware, aromas of butter and herbs fill the air, and the evening feels suspended in time.</p>
+      <p>For travelers or locals seeking something more than just a meal, <strong>French restaurants in Seminyak</strong> offer an experience that blends passion, precision, and the unmistakable warmth of Bali's hospitality.</p>
+
+      <h2>Where Culinary Craft Meets Atmosphere</h2>
+      <p>Start with Bistro à Table Seminyak, where delicate French sauces meet locally sourced seafood. The restaurant's minimalist interior and soft lighting create a relaxed, upscale environment perfect for romantic dinners or quiet celebrations. Then, there's <strong>The Club Bali</strong>, a true gem where gourmet French cuisine transforms into nightlife magic once the DJ starts spinning. Here, the line between fine dining and entertainment blurs beautifully — one moment you're savoring Duck Confit, the next, you're surrounded by soft beats and glowing lights.</p>
+      <p>For something more rustic, Chez Gado Gado remains a Seminyak classic. Perched on the beachfront, it serves exquisite French-Asian fusion cuisine with ocean views that rival any postcard. Enjoy seared foie gras while watching the sky shift from pink to gold — a perfect prelude to a night of dancing or quiet conversation.</p>
+      <p>If you're planning your visit, check out Tatler Asia's Bali dining guide or Epicure Asia for reviews of the island's top French-inspired kitchens. And if you're looking for event-worthy venues, our feature on <a href="https://theclubbali.com/private-pool-event-bali">Private Pool Event Bali</a> explores how to turn villa dining into a personal celebration.</p>
+
+      <h2>The Seminyak Dining Experience</h2>
+      <p>Dining in Seminyak is more than just food — it's a feeling. The ambiance of these <strong>French restaurants</strong> is intentionally curated: elegant yet unpretentious, luxurious but inviting. Chefs work with local farmers to source fresh herbs, spices, and vegetables, ensuring every dish captures both French finesse and Balinese freshness.</p>
+      <p>As the evening continues, it's not uncommon for the atmosphere to shift — music grows softer, lights dim lower, and guests linger over dessert and fine wine. Each restaurant becomes a world of its own, where laughter, aroma, and conversation blend effortlessly.</p>
+      <p>To explore more about nightlife transitions after dinner, visit <a href="https://theclubbali.com/french-food-and-dj-bali">French Food and DJs in Bali</a> — a perfect guide if you enjoy rhythm after refinement.</p>
+      <p>When you're ready to book a table or host an intimate gathering, reach out to The Club Bali team through their contact page. Their curated French dining experiences are tailored for guests who appreciate both taste and atmosphere, whether for a romantic evening or a private event.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>What makes Seminyak ideal for French dining?</strong></dt>
+          <dd>It's the mix of global talent and Balinese charm — international chefs find inspiration in local produce, creating unique interpretations of French cuisine.</dd>
+
+          <dt><strong>Do I need reservations?</strong></dt>
+          <dd>Yes. French restaurants in Seminyak are in high demand, especially during weekends and holidays.</dd>
+
+          <dt><strong>What's the best time to dine?</strong></dt>
+          <dd>Aim for sunset. Many restaurants have open terraces with views that make your dinner truly memorable.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Conclusion</h2>
+        <p>Seminyak's <strong>French restaurants</strong> remind you that dining can be art — an interplay of taste, texture, and time. It's where Parisian elegance meets island freedom, and where each night feels crafted with intention. Whether you're celebrating love, friendship, or life itself, Seminyak's French culinary scene invites you to indulge slowly, savor deeply, and live beautifully.</p>
+        <p>For more about fine dining and nightlife in Bali, explore luxury experiences at <strong>The Club Bali</strong> — where every evening is designed to be remembered.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-30",
+    title: "French Food and DJs in Bali | Where Fine Dining Meets Sound",
+    excerpt:
+      "Experience Bali's elegant nightlife with fine French dining, cocktails, and live DJ sets in Kerobokan and Seminyak's most stylish venues.",
+    description:
+      "In Bali, dining is more than a meal — it's an experience that moves, changes, and comes alive. Nowhere is this truer than in the island's French restaurants that blend refined cuisine with live DJ performances. Imagine tasting Lobster Thermidor while soft beats echo under candlelight, or sipping champagne as tropical air drifts through open terraces.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Nightlife & Dining",
+    published_at: new Date("2025-11-18").toISOString(), // November 18, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Enjoy French Food and DJs in Bali?</h1>
+      </header>
+      
+      <p>In Bali, dining is more than a meal — it's an experience that moves, changes, and comes alive. Nowhere is this truer than in the island's French restaurants that blend refined cuisine with live DJ performances. Imagine tasting Lobster Thermidor while soft beats echo under candlelight, or sipping champagne as tropical air drifts through open terraces. For food lovers who crave rhythm and refinement, Bali's <strong>French food and music culture</strong> offer a night that's both sensual and unforgettable.</p>
+      <p>Every detail — from the plating to the playlist — is part of the story. Here, dinner doesn't signal the end of the night. It's only the beginning.</p>
+
+      <h2>Where French Cuisine Meets Music</h2>
+      <p>Begin in Kerobokan, where Métis Restaurant sets the standard for French-Mediterranean dining. Nestled among lotus ponds and gardens, it offers dishes that balance art and flavor — think duck confit, truffle risotto, and delicate tarts. Evenings often feature ambient background music, adding rhythm to the refined atmosphere without overpowering conversation.</p>
+      <p>In Seminyak, <strong>The Club Bali</strong> brings an entirely different energy. Guests enjoy French fine dining before the lights dim, the tables clear, and the room transforms into an intimate lounge. Local and international DJs spin deep house, disco, and Balearic beats that perfectly match the sophistication of the setting. The result is an atmosphere where fine wine and rhythm intertwine effortlessly.</p>
+      <p>For a beachside alternative, Cocoon Beach Club pairs French-inspired menus with laid-back DJ sets. White cabanas, glowing pools, and curated playlists create a sensory experience that transitions seamlessly from dining to dancing.</p>
+      <p>Explore The Beat Bali's nightlife listings for event schedules or Now Bali's dining recommendations for updated restaurant features. And if you're drawn to tranquility after a lively night, our guide to <a href="https://theclubbali.com/kerobokan-fine-dining">Kerobokan Fine Dining</a> highlights quiet escapes where music fades and flavor takes the stage.</p>
+
+      <h2>Why This Blend Works So Well</h2>
+      <p>French cuisine and music share something vital — both are about feeling. In Bali, this connection deepens under the island's sky. You'll taste the precision of Parisian kitchens mixed with the bold ingredients of Indonesia, while the rhythm of tropical beats keeps the mood alive.</p>
+      <p>Dining here becomes performance. The plating, lighting, and tempo of the music all shape how the night unfolds. Some venues even collaborate with visiting DJs or sound curators to complement seasonal menus. It's thoughtful, immersive, and impossibly chic.</p>
+      <p>If you prefer a more personalized setting, our article on <a href="https://theclubbali.com/private-pool-event-bali">Private Pool Event Bali</a> explores how villas and resorts can recreate the same experience privately — complete with chefs, cocktails, and curated soundtracks.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>Where are the best places for French dining with DJs in Bali?</strong></dt>
+          <dd>Seminyak and Kerobokan are top picks for restaurants that combine fine dining with after-hours DJ sets.</dd>
+
+          <dt><strong>What's the typical vibe?</strong></dt>
+          <dd>Upscale but relaxed — you'll find locals, expats, and travelers sharing tables under the same groove.</dd>
+
+          <dt><strong>Do I need reservations?</strong></dt>
+          <dd>Yes. Many venues book up fast, especially for dinner service before live DJ events.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Conclusion</h2>
+        <p>In Bali, French dining doesn't end with dessert — it evolves into movement. The island's chefs and DJs collaborate to create something rare: a night where elegance meets energy, and every moment feels like a symphony of taste, sound, and emotion.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
 ];
 
 const ArticleSection = () => {

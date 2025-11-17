@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { format, parseISO } from "date-fns";
 import { enUS } from "date-fns/locale";
-import { Calendar, ArrowLeft } from "lucide-react";
+import { Calendar, ArrowLeft, FileQuestion } from "lucide-react";
 import { supabase } from "@/lib/customSupabaseClient";
 import { usePageContent } from "@/hooks/usePageContent";
 import Navbar from "@/components/Navbar";
@@ -842,119 +842,548 @@ const staticArticles = [
   `,
   },
   {
-    id: "static-article-22",
-    title: "French Restaurant Seminyak | Fine Dining and Nightlife Fusion",
+    id: "bali-article-16",
+    title:
+      "Why The Club Bali Tops the List of the Best Restaurants Near Canggu",
     excerpt:
-      "Experience Seminyak's best French restaurants blending fine dining, ocean views, and vibrant nightlife. Taste French elegance with a Balinese touch.",
+      "Canggu's vibrant energy and coastal charm have turned it into a favorite destination for food lovers from all over the world. From bohemian cafés to beachfront eateries, there's no shortage of great dining spots.",
     description:
-      "Seminyak is where Bali's culinary soul meets modern sophistication. Its streets are lined with restaurants that merge European refinement with tropical ease, and none do it better than the French establishments tucked among its palm-lined avenues. Here, the art of dining is elevated to something almost poetic — candlelight flickers over fine glassware, aromas of butter and herbs fill the air, and the evening feels suspended in time.",
+      "Canggu's vibrant energy and coastal charm have turned it into a favorite destination for food lovers from all over the world. From bohemian cafés to beachfront eateries, there's no shortage of great dining spots. But when it comes to the best restaurants near Canggu, one name rises above the rest — The Club Bali.",
     image_url:
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
     category: "French Cuisine",
-    published_at: new Date("2025-11-07").toISOString(), // November 7, 2025
+    published_at: new Date("2025-11-01").toISOString(), // November 1, 2025
     fullContent: `
     <article>
       <header>
-        <h1>Where Can You Find the Best French Restaurant in Seminyak?</h1>
+        <h1>Why The Club Bali Tops the List of the Best Restaurants Near Canggu</h1>
       </header>
       
-      <p>Seminyak is where Bali's culinary soul meets modern sophistication. Its streets are lined with restaurants that merge European refinement with tropical ease, and none do it better than the French establishments tucked among its palm-lined avenues. Here, the art of dining is elevated to something almost poetic — candlelight flickers over fine glassware, aromas of butter and herbs fill the air, and the evening feels suspended in time.</p>
+      <p>Canggu's vibrant energy and coastal charm have turned it into a favorite destination for food lovers from all over the world. From bohemian cafés to beachfront eateries, there's no shortage of great dining spots. But when it comes to the <strong>best restaurants near Canggu</strong>, one name rises above the rest — The Club Bali.</p>
+      <p>Located just minutes away in Kerobokan, The Club Bali offers a dining experience that marries French sophistication with the soul of Bali. Here, every meal is a journey — one that engages your senses through artful flavors, elegant ambiance, and impeccable service.</p>
 
-      <p>For travelers or locals seeking something more than just a meal, <strong>French restaurants in Seminyak</strong> offer an experience that blends passion, precision, and the unmistakable warmth of Bali's hospitality.</p>
+      <h2>A Culinary Escape Just Beyond Canggu</h2>
+      <p>Nestled along Jl. Batu Belig, The Club Bali is conveniently close to Canggu while offering an exclusive retreat from the bustling crowd. Its atmosphere blends Parisian elegance with tropical warmth, creating the perfect balance between refined dining and relaxed island vibes.</p>
+      <p>The restaurant's French-trained chef has crafted a menu that celebrates both European mastery and Bali's freshest local produce. Expect refined dishes like seared duck breast with Balinese spice glaze, ocean-fresh seafood, and decadent desserts — each presented with precision and flair.</p>
+      <p>Whether you're planning a romantic evening, a group celebration, or simply want to experience the <strong>best restaurants near Canggu</strong>, The Club Bali delivers an unforgettable encounter with taste and artistry.</p>
 
-      <h2>Where Culinary Craft Meets Atmosphere</h2>
-      <p>Start with Bistro à Table Seminyak, where delicate French sauces meet locally sourced seafood. The restaurant's minimalist interior and soft lighting create a relaxed, upscale environment perfect for romantic dinners or quiet celebrations. Then, there's <strong>The Club Bali</strong>, a true gem where gourmet French cuisine transforms into nightlife magic once the DJ starts spinning. Here, the line between fine dining and entertainment blurs beautifully — one moment you're savoring Duck Confit, the next, you're surrounded by soft beats and glowing lights.</p>
+      <h2>Fine Dining Meets Balinese Charm</h2>
+      <p>Dining at The Club Bali goes beyond a meal — it's an experience. The warm lighting, curated playlists, and attentive service set the stage for a sophisticated evening. Each table feels intimate yet social, creating the perfect space for conversation and connection.</p>
+      <p>Guests can indulge in a thoughtfully curated wine list, signature cocktails, and a selection of dishes that honor both French culinary technique and the boldness of Indonesian flavor. It's this careful balance that makes The Club Bali not only elegant but truly authentic to Bali's character.</p>
+      <p>For those seeking a little something extra, The Club Bali often hosts evenings with live music and thematic events, offering a refined alternative to Canggu's busy nightlife.</p>
 
-      <p>For something more rustic, Chez Gado Gado remains a Seminyak classic. Perched on the beachfront, it serves exquisite French-Asian fusion cuisine with ocean views that rival any postcard. Enjoy seared foie gras while watching the sky shift from pink to gold — a perfect prelude to a night of dancing or quiet conversation.</p>
-
-      <p>If you're planning your visit, check out Tatler Asia's Bali dining guide or Epicure Asia for reviews of the island's top French-inspired kitchens. And if you're looking for event-worthy venues, our feature on <a href="https://theclubbali.com/private-pool-event-bali">Private Pool Event Bali</a> explores how to turn villa dining into a personal celebration.</p>
-
-      <h2>The Seminyak Dining Experience</h2>
-      <p>Dining in Seminyak is more than just food — it's a feeling. The ambiance of these <strong>French restaurants</strong> is intentionally curated: elegant yet unpretentious, luxurious but inviting. Chefs work with local farmers to source fresh herbs, spices, and vegetables, ensuring every dish captures both French finesse and Balinese freshness.</p>
-
-      <p>As the evening continues, it's not uncommon for the atmosphere to shift — music grows softer, lights dim lower, and guests linger over dessert and fine wine. Each restaurant becomes a world of its own, where laughter, aroma, and conversation blend effortlessly.</p>
-
-      <p>To explore more about nightlife transitions after dinner, visit <a href="https://theclubbali.com/french-food-and-dj-bali">French Food and DJs in Bali</a> — a perfect guide if you enjoy rhythm after refinement.</p>
-
-      <p>When you're ready to book a table or host an intimate gathering, reach out to The Club Bali team through their contact page. Their curated French dining experiences are tailored for guests who appreciate both taste and atmosphere, whether for a romantic evening or a private event.</p>
+      <h2>Why The Club Bali Is Among the Best Restaurants Near Canggu</h2>
+      <p>What sets The Club Bali apart is its philosophy of harmony — blending artistry, sustainability, and hospitality. Ingredients are sourced from local farms, seafood from nearby waters, and every element on the plate serves a purpose.</p>
+      <p>Renowned travel platforms like <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a> and The Bali Bible have highlighted The Club Bali for its fusion of fine dining and local culture. On <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor</a>, guests consistently praise the restaurant's warm service, elegant ambiance, and exceptional flavors that make it a must-visit destination near Canggu.</p>
 
       <section>
         <h2>FAQs</h2>
         <dl>
-          <dt><strong>What makes Seminyak ideal for French dining?</strong></dt>
-          <dd>It's the mix of global talent and Balinese charm — international chefs find inspiration in local produce, creating unique interpretations of French cuisine.</dd>
+          <dt><strong>1. How far is The Club Bali from Canggu?</strong></dt>
+          <dd>It's just a short 10-minute drive from central Canggu, located conveniently in Kerobokan — easy to reach by car or scooter.</dd>
 
-          <dt><strong>Do I need reservations?</strong></dt>
-          <dd>Yes. French restaurants in Seminyak are in high demand, especially during weekends and holidays.</dd>
+          <dt><strong>2. Do I need a reservation to dine at The Club Bali?</strong></dt>
+          <dd>Yes, reservations are highly recommended, especially for weekends or special events, to ensure the best dining experience.</dd>
 
-          <dt><strong>What's the best time to dine?</strong></dt>
-          <dd>Aim for sunset. Many restaurants have open terraces with views that make your dinner truly memorable.</dd>
+          <dt><strong>3. Does The Club Bali offer vegetarian or vegan options?</strong></dt>
+          <dd>Absolutely. The menu includes a variety of vegetarian dishes, each crafted with the same care and creativity as the signature mains.</dd>
         </dl>
       </section>
 
       <footer>
-        <h2>Conclusion</h2>
-        <p>Seminyak's French restaurants remind you that dining can be art — an interplay of taste, texture, and time. It's where Parisian elegance meets island freedom, and where each night feels crafted with intention. Whether you're celebrating love, friendship, or life itself, Seminyak's French culinary scene invites you to indulge slowly, savor deeply, and live beautifully.</p>
-        <p>For more about fine dining and nightlife in Bali, explore luxury experiences at <strong>The Club Bali</strong> — where every evening is designed to be remembered.</p>
+        <h2>Experience the Best Restaurant Near Canggu Tonight</h2>
+        <p>If you're looking for an elegant escape close to Canggu, The Club Bali awaits. With its refined French-inspired menu, luxurious setting, and Balinese warmth, it's more than a restaurant — it's a destination.</p>
+        <p>Book your table today and discover why The Club Bali stands among the <strong>best restaurants near Canggu</strong> for those who appreciate the art of dining.</p>
         <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
       </footer>
     </article>
   `,
   },
   {
-    id: "static-article-23",
-    title: "French Food and DJs in Bali | Where Fine Dining Meets Sound",
+    id: "bali-article-17",
+    title: "Where's the Best Spot for Sunset Drinks in Bali?",
     excerpt:
-      "Experience Bali's elegant nightlife with fine French dining, cocktails, and live DJ sets in Kerobokan and Seminyak's most stylish venues.",
+      "There's something truly magical about enjoying a cocktail while watching the sun dip below the horizon, casting a golden hue across Bali's stunning coastline.",
     description:
-      "In Bali, dining is more than a meal — it's an experience that moves, changes, and comes alive. Nowhere is this truer than in the island's French restaurants that blend refined cuisine with live DJ performances. Imagine tasting Lobster Thermidor while soft beats echo under candlelight, or sipping champagne as tropical air drifts through open terraces.",
+      "There's something truly magical about enjoying a cocktail while watching the sun dip below the horizon, casting a golden hue across Bali's stunning coastline. Whether you're celebrating a special moment or simply unwinding after a day of exploring, Bali's sunsets provide the perfect backdrop for some of the island's most refreshing drinks.",
     image_url:
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
     category: "Nightlife & Dining",
-    published_at: new Date("2025-11-08").toISOString(), // November 8, 2025
+    published_at: new Date("2025-11-02").toISOString(), // November 2, 2025
     fullContent: `
     <article>
       <header>
-        <h1>Where Can You Enjoy French Food and DJs in Bali?</h1>
+        <h1>Where's the Best Spot for Sunset Drinks in Bali?</h1>
       </header>
       
-      <p>In Bali, dining is more than a meal — it's an experience that moves, changes, and comes alive. Nowhere is this truer than in the island's French restaurants that blend refined cuisine with live DJ performances. Imagine tasting Lobster Thermidor while soft beats echo under candlelight, or sipping champagne as tropical air drifts through open terraces. For food lovers who crave rhythm and refinement, Bali's <strong>French food and music culture</strong> offer a night that's both sensual and unforgettable.</p>
+      <p>There's something truly magical about enjoying a cocktail while watching the sun dip below the horizon, casting a golden hue across Bali's stunning coastline. Whether you're celebrating a special moment or simply unwinding after a day of exploring, Bali's sunsets provide the perfect backdrop for some of the island's most refreshing drinks. From rooftop bars with panoramic views to intimate beach lounges, Bali offers the <strong>best spots to enjoy sunset cocktails</strong>.</p>
+      <p>For an unforgettable experience, be sure to visit The Club Bali. Nestled in the heart of Bali, it's the perfect place to unwind with expertly crafted cocktails while soaking in breathtaking sunset views. For more information on Bali's top attractions and recommendations, check out <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's guide to Bali</a>.</p>
 
-      <p>Every detail — from the plating to the playlist — is part of the story. Here, dinner doesn't signal the end of the night. It's only the beginning.</p>
+      <h2>Sunset Cocktails with Stunning Views</h2>
+      <p>If you're looking to pair your <strong>sunset cocktails</strong> with jaw-dropping views, The Club Bali offers one of the best vantage points on the island. Whether you're lounging by the pool or relaxing in the stylish ambiance of the bar, it's a prime spot to watch the golden hour unfold. The combination of exquisite drinks and breathtaking views creates a truly memorable experience.</p>
+      <p>For those seeking alternative sunset experiences, Single Fin in Uluwatu offers dramatic cliffside views of the Uluwatu surf break. This bar is perfect for watching the sunset while enjoying expertly crafted cocktails. If you're in the mood for something a bit more intimate, The Edge in Pecatu provides a luxurious setting where you can sip on a gin and tonic or a whiskey sour as the sun sets over the ocean.</p>
+      <p>For more sunset bar options, be sure to check out our article on luxury bars in Bali. For more details on Bali's dining scene and best places to visit, visit <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a>.</p>
 
-      <h2>Where French Cuisine Meets Music</h2>
-      <p>Begin in Kerobokan, where Métis Restaurant sets the standard for French-Mediterranean dining. Nestled among lotus ponds and gardens, it offers dishes that balance art and flavor — think duck confit, truffle risotto, and delicate tarts. Evenings often feature ambient background music, adding rhythm to the refined atmosphere without overpowering conversation.</p>
-
-      <p>In Seminyak, <strong>The Club Bali</strong> brings an entirely different energy. Guests enjoy French fine dining before the lights dim, the tables clear, and the room transforms into an intimate lounge. Local and international DJs spin deep house, disco, and Balearic beats that perfectly match the sophistication of the setting. The result is an atmosphere where fine wine and rhythm intertwine effortlessly.</p>
-
-      <p>For a beachside alternative, Cocoon Beach Club pairs French-inspired menus with laid-back DJ sets. White cabanas, glowing pools, and curated playlists create a sensory experience that transitions seamlessly from dining to dancing.</p>
-
-      <p>Explore The Beat Bali's nightlife listings for event schedules or Now Bali's dining recommendations for updated restaurant features. And if you're drawn to tranquility after a lively night, our guide to <a href="https://theclubbali.com/kerobokan-fine-dining">Kerobokan Fine Dining</a> highlights quiet escapes where music fades and flavor takes the stage.</p>
-
-      <h2>Why This Blend Works So Well</h2>
-      <p>French cuisine and music share something vital — both are about feeling. In Bali, this connection deepens under the island's sky. You'll taste the precision of Parisian kitchens mixed with the bold ingredients of Indonesia, while the rhythm of tropical beats keeps the mood alive.</p>
-
-      <p>Dining here becomes performance. The plating, lighting, and tempo of the music all shape how the night unfolds. Some venues even collaborate with visiting DJs or sound curators to complement seasonal menus. It's thoughtful, immersive, and impossibly chic.</p>
-
-      <p>If you prefer a more personalized setting, our article on <a href="https://theclubbali.com/private-pool-event-bali">Private Pool Event Bali</a> explores how villas and resorts can recreate the same experience privately — complete with chefs, cocktails, and curated soundtracks.</p>
+      <h2>Sunset Drinks with a Local Twist</h2>
+      <p>What makes <strong>sunset cocktails in Bali</strong> truly special is the way local ingredients and flavors are incorporated into the drinks. At The Club Bali, for example, the cocktail menu features tropical ingredients such as fresh coconut water, palm sugar, and local fruits that provide a uniquely Balinese twist to classic drinks.</p>
+      <p>Whether you're enjoying a refreshing mojito or a smooth margarita, the atmosphere at The Club Bali is second to none. The serene setting, combined with exceptional drinks, creates the perfect environment for a relaxing sunset experience, allowing you to unwind and indulge in the moment.</p>
 
       <section>
         <h2>FAQs</h2>
         <dl>
-          <dt><strong>Where are the best places for French dining with DJs in Bali?</strong></dt>
-          <dd>Seminyak and Kerobokan are top picks for restaurants that combine fine dining with after-hours DJ sets.</dd>
+          <dt><strong>What's the best drink for watching the sunset in Bali?</strong></dt>
+          <dd>The best drink for watching the sunset in Bali depends on your preference, but tropical cocktails like mojitos or chilled white wines are popular choices due to their refreshing flavors.</dd>
 
-          <dt><strong>What's the typical vibe?</strong></dt>
-          <dd>Upscale but relaxed — you'll find locals, expats, and travelers sharing tables under the same groove.</dd>
+          <dt><strong>Where can I enjoy sunset drinks with a beach view in Bali?</strong></dt>
+          <dd>Head to La Plancha in Seminyak for a relaxed beachside lounge experience or The Club Bali for an exclusive, luxurious sunset-viewing experience with world-class cocktails.</dd>
 
-          <dt><strong>Do I need reservations?</strong></dt>
-          <dd>Yes. Many venues book up fast, especially for dinner service before live DJ events.</dd>
+          <dt><strong>Are sunset drinks in Bali expensive?</strong></dt>
+          <dd><strong>Sunset drinks in Bali</strong> can range from affordable to luxurious. Popular spots like Single Fin and The Club Bali offer upscale experiences, with cocktails that are worth every sip. For more information on Bali's top attractions and recommendations, check out <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's guide to Bali</a>.</dd>
         </dl>
       </section>
 
       <footer>
         <h2>Conclusion</h2>
-        <p>In Bali, French dining doesn't end with dessert — it evolves into movement. The island's chefs and DJs collaborate to create something rare: a night where elegance meets energy, and every moment feels like a symphony of taste, sound, and emotion.</p>
+        <p>Ready to relax and unwind with the <strong>best sunset drinks in Bali</strong>? Visit The Club Bali for an unforgettable sunset experience. With a stunning setting, expertly crafted cocktails, and unparalleled views, it's the perfect spot to enjoy Bali's iconic sunsets. Don't miss out on this tropical paradise — book your visit today at The Club Bali.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-18",
+    title: "Where Can You Party and Dine in Bali Like a Local?",
+    excerpt:
+      "As the sun sets over Bali, the island shifts from serenity to celebration. The waves quiet down, lanterns glow, and music begins to rise from beachside venues.",
+    description:
+      "As the sun sets over Bali, the island shifts from serenity to celebration. The waves quiet down, lanterns glow, and music begins to rise from beachside venues. Here, dining and nightlife aren't two separate worlds — they flow together naturally, creating an experience that feels effortless and endlessly inviting.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Nightlife & Dining",
+    published_at: new Date("2025-11-03").toISOString(), // November 3, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Party and Dine in Bali Like a Local?</h1>
+      </header>
+      
+      <p>As the sun sets over Bali, the island shifts from serenity to celebration. The waves quiet down, lanterns glow, and music begins to rise from beachside venues. Here, dining and nightlife aren't two separate worlds — they flow together naturally, creating an experience that feels effortless and endlessly inviting. Whether you're in search of gourmet cuisine or barefoot dancing by the sea, Bali's rhythm welcomes you to indulge in both.</p>
+      <p>What makes this island special isn't just its beauty but its ability to turn an ordinary evening into something memorable. Locals and travelers share the same spirit — eat, drink, dance, and let the night carry you wherever it leads.</p>
+
+      <h2>The Best Places to Eat and Party</h2>
+      <p>Seminyak is Bali's nightlife heartbeat — a blend of sophistication and freedom. Begin your evening at Motel Mexicola, where colorful décor, laughter, and plates of authentic tacos set the tone for fun. After dinner, step into La Favela, an indoor-jungle-style restaurant that turns into one of Bali's most famous late-night clubs. Its vintage lighting, murals, and international DJs create a one-of-a-kind energy.</p>
+      <p>If you prefer something a bit more polished, The Club Bali in Kerobokan offers a refined mix of French-inspired dining and curated DJ sets. Here, dinner blends seamlessly into nightlife — elegance meeting excitement.</p>
+      <p>For a laid-back beachfront vibe, head to Finns Beach Club or The Lawn Canggu, where you can enjoy sunset dining followed by world-class DJs and cocktails by the water. Both offer ocean views that make every bite and beat feel cinematic.</p>
+      <p>For more venue inspiration, browse <a href="https://honeycombers.com" class="text-primary hover:underline">Honeycombers Bali's nightlife picks</a> or check <a href="https://bali.com" class="text-primary hover:underline">Bali Interiors' feature on restaurants with a view</a>. And if you're seeking a quiet, romantic start before the music begins, read our article on French Restaurant Seminyak.</p>
+
+      <h2>Why Dining and Partying in Bali Feel Different</h2>
+      <p>Bali's magic is its flow — no sharp edges between dinner and nightlife, just smooth transitions powered by the island's warmth and creativity. You can start the evening sipping wine at sunset, then follow the rhythm from a dining terrace to a rooftop bar, ending your night under a sky full of stars.</p>
+      <p>Every venue seems to have its own pulse, yet all share a sense of connection. You'll meet locals swapping stories, tourists blending in with expats, and staff who treat guests like old friends. The food, the music, and the smiles all merge into one collective celebration.</p>
+      <p>If you prefer something more intimate, our article on Private Pool Event Bali explores how luxury villas host exclusive dinners and parties — perfect for groups who want privacy without losing Bali's signature energy.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>1. What are the best areas for dining and nightlife in Bali?</strong></dt>
+          <dd>Seminyak and Canggu are known for their lively blend of restaurants and clubs, while Uluwatu offers high-end sunset bars with cliffside views.</dd>
+
+          <dt><strong>2. Do I need to make a reservation?</strong></dt>
+          <dd>Yes — sunset dinners and weekend events often fill quickly, especially at popular beach clubs.</dd>
+
+          <dt><strong>3. What's the typical dress code?</strong></dt>
+          <dd>Smart casual or resort chic — think effortless, stylish comfort.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Conclusion</h2>
+        <p>Bali doesn't just host nights — it creates them. From candlelit dinners in tropical gardens to beachside parties that last till dawn, the island turns every evening into an experience worth savoring. Wherever you go, you're not just a guest — you're part of Bali's living rhythm, where every night feels like a celebration of life itself.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-19",
+    title: "Where Can You Find the Perfect Dinner for Couples in Bali?",
+    excerpt:
+      "If you're searching for the most romantic dinner for couples in Bali, look no further than The Club Bali — a hidden gem in Kerobokan where French sophistication meets island serenity.",
+    description:
+      "If you're searching for the most romantic dinner for couples in Bali, look no further than The Club Bali — a hidden gem in Kerobokan where French sophistication meets island serenity. Whether it's your honeymoon, anniversary, or a spontaneous date night, The Club Bali offers a dining experience that blends passion, artistry, and ambiance into a single unforgettable evening.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Romantic Dining",
+    published_at: new Date("2025-11-04").toISOString(), // November 4, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Find the Perfect Dinner for Couples in Bali?</h1>
+      </header>
+      
+      <p>If you're searching for the most <strong>romantic dinner for couples in Bali</strong>, look no further than The Club Bali — a hidden gem in Kerobokan where French sophistication meets island serenity. Whether it's your honeymoon, anniversary, or a spontaneous date night, The Club Bali offers a dining experience that blends passion, artistry, and ambiance into a single unforgettable evening.</p>
+      <p>Set amidst Bali's tropical charm, this elegant restaurant has become a haven for couples seeking connection through food, music, and atmosphere — a true celebration of love in every detail.</p>
+
+      <h2>The Experience: Romance Served on Every Plate</h2>
+      <p>At The Club Bali, dinner is more than a meal — it's a shared moment. The restaurant's menu, designed by a French-trained chef in Bali, combines timeless French culinary techniques with locally sourced ingredients.</p>
+      <p>Couples can indulge in signature dishes like buttery escargots, delicate seafood bisque, and tender filet mignon finished with island-grown spices. Every plate is crafted to awaken the senses, making The Club Bali one of the most intimate fine dining experiences in Bali.</p>
+      <p>Enhance your evening with selections from our exclusive French wine list, or try a handcrafted cocktail infused with tropical fruits and Parisian flair — the perfect toast to a night of romance.</p>
+
+      <h2>The Ambiance: Candlelight, Music & Connection</h2>
+      <p>When the sun sets, The Club Bali transforms into an oasis of elegance and emotion. The gentle glow of candlelight, soft live music, and the subtle aroma of freshly prepared dishes create an atmosphere designed for closeness.</p>
+      <p>Couples can dine indoors surrounded by artful décor or enjoy an alfresco evening beneath the stars — each setting curated to elevate your <strong>romantic dinner in Bali</strong>. From the first sip of wine to the final dessert course, every moment feels like a slow dance between taste and feeling.</p>
+
+      <h2>Why The Club Bali Is a Top Choice for Couples</h2>
+      <p>What sets The Club Bali apart is its philosophy: creating experiences that connect hearts through flavor and ambiance. With attentive service, intimate lighting, and refined décor, it's no wonder this venue is often listed among the top restaurants for couples in Kerobokan.</p>
+      <p>As featured on <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a> and The Bali Bible, The Club Bali continues to redefine romantic dining with its French-inspired menu and artistic presentation. Travelers and locals alike praise its atmosphere on <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's Bali restaurant listings</a> for offering an ideal blend of passion, privacy, and perfection.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>1. What makes The Club Bali ideal for couples?</strong></dt>
+          <dd>The Club Bali offers a romantic setting, fine French cuisine, candlelit tables, and attentive service designed to create memorable evenings for two.</dd>
+
+          <dt><strong>2. Can I request a special setup for my dinner?</strong></dt>
+          <dd>Yes — The Club Bali offers customizable table arrangements, from private corners to candlelight decorations for anniversaries or proposals.</dd>
+
+          <dt><strong>3. Is live music available during dinner?</strong></dt>
+          <dd>Yes, select evenings feature live performances, adding a melodic touch to your romantic dining experience.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Book Your Romantic Dinner Tonight</h2>
+        <p>Celebrate love, laughter, and the art of French dining at The Club Bali. Whether it's your first date or your 50th, experience an unforgettable <strong>dinner for couples in Bali</strong> that captures the essence of romance with every bite.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-20",
+    title: "Where Can You Find the Best Pool Party in Bali?",
+    excerpt:
+      "If you're searching for the ultimate pool party in Bali, look no further than The Club Bali — where sun-soaked days turn into electrifying nights filled with music, cocktails, and vibrant energy.",
+    description:
+      "If you're searching for the ultimate pool party in Bali, look no further than The Club Bali — where sun-soaked days turn into electrifying nights filled with music, cocktails, and vibrant energy. Nestled in the heart of Kerobokan, this stylish venue redefines the island's nightlife scene by blending luxury, rhythm, and tropical vibes into one unforgettable experience.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Pool Parties",
+    published_at: new Date("2025-11-06").toISOString(), // November 6, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Find the Best Pool Party in Bali?</h1>
+      </header>
+      
+      <p>If you're searching for the ultimate <strong>pool party in Bali</strong>, look no further than The Club Bali — where sun-soaked days turn into electrifying nights filled with music, cocktails, and vibrant energy. Nestled in the heart of Kerobokan, this stylish venue redefines the island's nightlife scene by blending luxury, rhythm, and tropical vibes into one unforgettable experience.</p>
+      <p>Bali is known for its beach clubs and late-night lounges, but The Club Bali offers something truly different — a chic, intimate, and immersive pool party setting designed for those who crave sophistication with a touch of fun.</p>
+
+      <h2>The Experience: A Day of Music, Sun & Style</h2>
+      <p>Every weekend, The Club Bali transforms into a lively <strong>Bali pool bar</strong> where the energy flows as freely as the drinks. Guests are invited to dive in, dance, or lounge under the Bali sun while enjoying the curated beats of top <strong>DJs in Bali</strong>.</p>
+      <p>With its shimmering pool, stylish cabanas, and world-class sound system, it's the perfect backdrop for both relaxation and revelry. Signature cocktails inspired by French mixology and tropical fruits set the tone — from refreshing spritzers to handcrafted martinis.</p>
+      <p>Whether you come to unwind, mingle, or dance the day away, The Club Bali's poolside experience captures the essence of a <strong>luxury pool party in Bali</strong>.</p>
+
+      <h2>When the Sun Sets: The Party Evolves</h2>
+      <p>As evening arrives, The Club Bali's poolside ambiance transforms into a sophisticated night lounge. The lighting softens, the music deepens, and the crowd moves effortlessly from the pool to the bar, where French-inspired cocktails and premium wines take center stage.</p>
+      <p>Unlike crowded beach clubs, The Club Bali offers an exclusive yet welcoming atmosphere — perfect for couples, groups, and travelers seeking an elevated Bali nightlife experience. The synergy of music, setting, and hospitality makes it one of the most talked-about <strong>night pool party destinations in Bali</strong>.</p>
+
+      <h2>What Makes The Club Bali's Pool Parties Unique</h2>
+      <p>The Club Bali isn't just about parties — it's about connection and creativity. The space reflects the brand's French elegance and Balinese soul, creating an ambiance that feels both luxurious and authentic. Each event is curated to deliver something new, whether it's a themed Sunday pool party in Seminyak, a private DJ showcase, or an intimate sunset gathering.</p>
+      <p>According to <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a>, pool parties are among the island's most sought-after nightlife experiences — and The Club Bali's unique blend of fine dining, live entertainment, and tropical energy makes it a must-visit. It's also featured on <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's Bali nightlife listings</a> and The Bali Bible as one of the most exciting party venues in Kerobokan.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>1. When does The Club Bali host its pool parties?</strong></dt>
+          <dd>Pool parties are usually held on weekends, with special events and DJ performances announced on The Club Bali's social channels.</dd>
+
+          <dt><strong>2. Can I book a private pool event at The Club Bali?</strong></dt>
+          <dd>Yes! The venue is available for private parties, birthdays, and corporate gatherings with customized food and drink packages.</dd>
+
+          <dt><strong>3. Is there a dress code for pool parties?</strong></dt>
+          <dd>Chic swimwear and resort-casual attire are encouraged — come ready to relax and dance in style!</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Join the Island's Most Stylish Pool Party</h2>
+        <p>Experience the excitement, energy, and elegance of The Club Bali's <strong>pool party in Bali</strong> — where every splash, sip, and beat celebrates the island's vibrant spirit. Reserve your spot, gather your friends, and dive into an unforgettable weekend experience.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-21",
+    title: "Authentic French Dishes in Bali | The Club Bali",
+    excerpt:
+      "Discover authentic French dishes in Bali at The Club Bali — where Parisian elegance meets Balinese soul for an unforgettable fine dining experience.",
+    description:
+      "Bali is known for its tropical charm and diverse dining scene, but if you're craving authentic French dishes in Bali, few places capture that essence like The Club Bali in Kerobokan. Here, the timeless artistry of French cuisine meets the vibrant soul of the island, offering an unforgettable culinary journey that delights both locals and travelers alike.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "French Cuisine",
+    published_at: new Date("2025-11-09").toISOString(), // November 9, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Experience Authentic French Dishes in Bali?</h1>
+      </header>
+      
+      <p>Bali is known for its tropical charm and diverse dining scene, but if you're craving <strong>authentic French dishes in Bali</strong>, few places capture that essence like The Club Bali in Kerobokan. Here, the timeless artistry of French cuisine meets the vibrant soul of the island, offering an unforgettable culinary journey that delights both locals and travelers alike.</p>
+      <p>Nestled just minutes from Batu Belig Beach, The Club Bali creates a fine balance between Parisian elegance and Balinese warmth — making it an ideal destination for those seeking an intimate dinner, a celebration, or a romantic night out.</p>
+
+      <h2>Where French Culinary Art Meets Island Spirit</h2>
+      <p>At The Club Bali, dining is more than a meal — it's a story told through flavor, texture, and atmosphere. Each plate is crafted by our French-trained chef, blending classic techniques with local ingredients sourced from Bali's farms and markets.</p>
+      <p>From rich duck confit to delicate soufflés and vibrant seafood creations infused with Balinese spices, every dish celebrates the harmony between tradition and innovation. Pair your meal with a glass from our curated French wine collection for the perfect <strong>wine and dine in Bali</strong> experience.</p>
+
+      <h2>Beyond Dining: A Night of Romance and Atmosphere</h2>
+      <p>As the sun sets over Kerobokan, The Club Bali transforms into a romantic dinner destination filled with candlelight, soft music, and the gentle hum of evening conversations. Whether you're enjoying a <strong>candlelight dinner in Bali</strong> or sipping signature French-inspired cocktails, every detail is designed to awaken your senses.</p>
+      <p>Our artisanal lounge and bar also hosts select nights with live DJs, making it a favorite for couples seeking an elegant yet lively <strong>Bali nightlife</strong> experience.</p>
+
+      <h2>What Makes The Club Bali Unique</h2>
+      <p>What truly sets The Club Bali apart is its philosophy — a fusion of French artistry and Balinese soul. The ambiance reflects understated luxury, while the menu tells a story of passion, creativity, and respect for local ingredients.</p>
+      <p>The restaurant's design captures modern Parisian flair while embracing the tropical serenity of Bali. Every visit feels personal, every bite intentional, and every evening memorable.</p>
+      <p>As featured on <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a>, The Club Bali is among the rising stars redefining fine dining in Bali. According to <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's list of top Bali restaurants</a> and The Bali Bible, it stands as one of the island's most elegant luxury dining experiences for those who seek authenticity and artistry in equal measure.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>What makes The Club Bali's French dishes authentic?</strong></dt>
+          <dd>Each dish is prepared using traditional French techniques combined with locally sourced Balinese ingredients for a truly unique taste.</dd>
+
+          <dt><strong>Does The Club Bali offer vegetarian or vegan French options?</strong></dt>
+          <dd>Yes, several dishes on our menu highlight plant-based interpretations of French classics, made fresh daily.</dd>
+
+          <dt><strong>Is The Club Bali suitable for romantic dinners or celebrations?</strong></dt>
+          <dd>Absolutely. The ambiance, candlelit setting, and exquisite menu make it perfect for couples and special occasions.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Join Us for a Night of French Elegance</h2>
+        <p>Experience the best of both worlds at The Club Bali — where French gastronomy meets tropical charm. Reserve your table today and indulge in <strong>authentic French dishes in Bali</strong>, thoughtfully paired with fine wines, live music, and a touch of island magic.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-22",
+    title: "Fine Dining and Live Music in Bali | The Club Bali",
+    excerpt:
+      "Experience fine dining and live music in Bali at The Club Bali where French cuisine, elegant ambiance, and soulful performances create memorable nights.",
+    description:
+      "If you're searching for the perfect blend of fine dining and live music in Bali, look no further than The Club Bali — an elegant sanctuary in Kerobokan where French artistry meets island rhythm. Here, each evening unfolds like a story — from candlelit tables and gourmet French dishes to soulful tunes that set the mood for a truly unforgettable night.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Fine Dining",
+    published_at: new Date("2025-11-10").toISOString(), // November 10, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Experience Fine Dining and Live Music in Bali?</h1>
+      </header>
+      
+      <p>If you're searching for the perfect blend of <strong>fine dining and live music in Bali</strong>, look no further than The Club Bali — an elegant sanctuary in Kerobokan where French artistry meets island rhythm. Here, each evening unfolds like a story — from candlelit tables and gourmet French dishes to soulful tunes that set the mood for a truly unforgettable night.</p>
+      <p>Whether you're planning a romantic date, a celebration, or a night out with friends, The Club Bali offers a seamless fusion of exquisite flavors and captivating entertainment in the heart of Bali's dining scene.</p>
+
+      <h2>The Experience: Dining to the Rhythm of Elegance</h2>
+      <p>At The Club Bali, every dish is a masterpiece crafted with passion and precision. Our French chef in Bali draws inspiration from Parisian haute cuisine and Bali's vibrant produce to create a menu that excites the palate.</p>
+      <p>Guests can indulge in signature creations like seared duck breast with tamarind glaze, Balinese-spiced bouillabaisse, and delicate chocolate fondant — each plated with artistic flair. Complement your meal with selections from our curated French wine list or handcrafted cocktails for the ultimate <strong>wine and dine in Bali</strong> experience.</p>
+      <p>As you savor each bite, live musicians fill the air with soft jazz, acoustic performances, or curated DJ sets — creating the perfect harmony of <strong>fine dining and live music in Bali</strong>.</p>
+
+      <h2>A Complete Evening: Music, Mood & Magic</h2>
+      <p>When the sun sets, The Club Bali transforms into an intimate stage of melody and movement. The lighting softens, the bar glows, and the island breeze carries the rhythm of live performances — from smooth saxophone nights to modern lounge beats.</p>
+      <p>This experience is not just about food; it's about connection. Couples sway to the music, laughter mingles with the clink of glasses, and the ambiance evokes the effortless romance of Paris beneath the stars.</p>
+      <p>It's no wonder The Club Bali has become one of the most talked-about destinations for <strong>romantic dinners in Bali</strong> and upscale nightlife experiences.</p>
+
+      <h2>What Makes The Club Bali Stand Out</h2>
+      <p>The Club Bali's uniqueness lies in its philosophy — a seamless blend of fine dining, artistic presentation, and soulful entertainment. Every detail, from the curated playlist to the table settings, reflects the brand's commitment to elegance and atmosphere.</p>
+      <p>The restaurant's modern yet cozy design, inspired by Parisian lounges and Balinese craftsmanship, makes it the perfect place for couples and groups who appreciate sophistication without pretense.</p>
+      <p>According to <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a>, Kerobokan's dining scene is on the rise — and The Club Bali stands among the finest. It's also featured on <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's top-rated restaurants in Bali</a> and The Bali Bible as one of the must-visit destinations for travelers seeking fine dining and live music in Bali.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>What kind of live music does The Club Bali feature?</strong></dt>
+          <dd>The Club Bali hosts live acoustic sessions, jazz ensembles, and occasional DJ nights that complement the dining ambiance.</dd>
+
+          <dt><strong>Can I reserve a table for a special occasion?</strong></dt>
+          <dd>Yes! You can book private tables for anniversaries, proposals, or intimate gatherings — ideal for celebrating love and life in style.</dd>
+
+          <dt><strong>Is there a dress code at The Club Bali?</strong></dt>
+          <dd>Smart casual or elegant attire is recommended to match the restaurant's refined yet relaxed atmosphere.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Book Your Perfect Evening</h2>
+        <p>Experience the best of <strong>fine dining and live music in Bali</strong> at The Club Bali. Indulge in French culinary artistry, sip premium wines, and lose yourself in the rhythm of live performances under the Balinese night sky.</p>
+        <p><strong>📍 Jl. Batu Belig Gg. Daksina No. 1, Kerobokan, Kec. Kuta Utara, Kabupaten Badung, Bali 80361, Indonesia</strong></p>
+        <p><strong>📞 +62 823 4249 2401 | ✉️ reservations@theclubbali.com</strong></p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-23",
+    title: "What Makes Seminyak Night Events Special | The Club Bali",
+    excerpt:
+      "Experience the best Seminyak night events at The Club Bali — fine dining, live DJs, cocktails, and French-inspired nightlife in a luxury Bali setting.",
+    description:
+      "When the sun sets over Bali, Seminyak night events come alive — a captivating blend of music, flavor, and tropical energy. From chic cocktail lounges to vibrant beach clubs, Seminyak has long been the island's heartbeat of upscale nightlife. But if you're seeking an experience that's both elegant and immersive, The Club Bali near Kerobokan offers something truly special.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Nightlife & Dining",
+    published_at: new Date("2025-11-11").toISOString(), // November 11, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>What Makes Seminyak Night Events So Unforgettable?</h1>
+      </header>
+      
+      <p>When the sun sets over Bali, <strong>Seminyak night events</strong> come alive — a captivating blend of music, flavor, and tropical energy. From chic cocktail lounges to vibrant beach clubs, Seminyak has long been the island's heartbeat of upscale nightlife. But if you're seeking an experience that's both elegant and immersive, The Club Bali near Kerobokan offers something truly special.</p>
+      <p>Located just minutes from Seminyak, The Club Bali isn't just a restaurant — it's a destination where fine dining meets entertainment, and every evening feels like a celebration of island life wrapped in Parisian sophistication.</p>
+
+      <h2>Where Cuisine Meets Celebration</h2>
+      <p>At The Club Bali, nights unfold like a symphony of taste and sound. Begin your evening with authentic French dishes crafted by our talented French-trained chef, blending classic European artistry with local Balinese ingredients.</p>
+      <p>As dinner transitions into the night, the atmosphere transforms. The lights dim, the music rises, and guests are invited to enjoy live performances, DJ sets, and a curated lineup of themed <strong>Seminyak night events</strong> that keep the energy flowing until midnight.</p>
+      <p>From intimate jazz nights to lively weekend sessions by the pool, The Club Bali brings together food, music, and ambiance in a way that redefines what a night out in Seminyak can be.</p>
+
+      <h2>Beyond the Typical Night Out</h2>
+      <p>What makes The Club Bali different from other Seminyak night events is its balance of sophistication and spontaneity. It's not just about dancing or drinks — it's about connection. Guests gather under the stars to enjoy handcrafted cocktails, French wines, and signature small plates while soaking in the rhythmic beats of the night.</p>
+      <p>Every event is designed with creativity and flair, from tropical-themed parties to elegant poolside gatherings featuring some of Bali's top DJs. Whether you come for the music, the mood, or the mingling, you'll find yourself surrounded by a crowd that appreciates refined entertainment.</p>
+
+      <h2>Why The Club Bali Is the Highlight of Seminyak's Nightlife</h2>
+      <p>Few venues capture the essence of Bali nightlife quite like The Club Bali. Its unique blend of French elegance and Balinese hospitality creates an atmosphere that feels both luxurious and inviting. The décor — sleek, warm, and artistic — mirrors the brand's commitment to creating unforgettable sensory experiences.</p>
+      <p>As featured on <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a> and The Bali Bible, The Club Bali stands among the top spots for <strong>Seminyak night events</strong>, praised for its mix of fine dining, cocktails, and live entertainment. According to <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's Bali nightlife listings</a>, visitors love its perfect balance of energy and intimacy — ideal for couples, friends, or solo travelers looking for something extraordinary.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>Does The Club Bali host regular night events?</strong></dt>
+          <dd>Yes, weekly schedules include live DJs, themed evenings, and occasional private performances.</dd>
+
+          <dt><strong>Can I reserve a table for an event?</strong></dt>
+          <dd>Absolutely — table reservations are available for dinner and evening events. It's best to book early, especially on weekends.</dd>
+
+          <dt><strong>What should I wear to The Club Bali's night events?</strong></dt>
+          <dd>Smart-casual or stylish resort wear is ideal to match the venue's chic yet relaxed atmosphere.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Experience the Energy of Seminyak Nights</h2>
+        <p>If you're looking to experience the best of <strong>Seminyak night events</strong>, join us at The Club Bali. Enjoy gourmet dining, world-class entertainment, and a touch of French flair — all in one unforgettable evening.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-24",
+    title: "Exclusive Dining Experience in Bali | The Club Bali",
+    excerpt:
+      "Discover an exclusive dining experience in Bali at The Club Bali — French elegance, fine wines, and artistic cuisine in a luxurious Kerobokan setting.",
+    description:
+      "In a place as vibrant and diverse as Bali, dining is more than just a meal — it's a journey. Yet, for those seeking something extraordinary, the island offers experiences that transcend the ordinary table setting. If you've ever wondered what truly makes an exclusive dining experience in Bali, you'll find your answer at The Club Bali, where French artistry meets Balinese warmth in an atmosphere designed for the senses.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Fine Dining",
+    published_at: new Date("2025-11-12").toISOString(), // November 12, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>What Defines an Exclusive Dining Experience in Bali?</h1>
+      </header>
+      
+      <p>In a place as vibrant and diverse as Bali, dining is more than just a meal — it's a journey. Yet, for those seeking something extraordinary, the island offers experiences that transcend the ordinary table setting. If you've ever wondered what truly makes an <strong>exclusive dining experience in Bali</strong>, you'll find your answer at The Club Bali, where French artistry meets Balinese warmth in an atmosphere designed for the senses.</p>
+      <p>Nestled in Kerobokan, just minutes from the heart of Seminyak, The Club Bali reimagines luxury dining by blending refined flavors, elegant presentation, and intimate ambiance into one unforgettable experience.</p>
+
+      <h2>When Art Meets Flavor</h2>
+      <p>At The Club Bali, exclusivity begins with the details. Each dish tells a story — one that merges French haute cuisine with the colorful vibrancy of Indonesian ingredients. The restaurant's French-trained chef carefully curates a menu that changes with the seasons, ensuring only the freshest local produce and seafood make their way to your plate.</p>
+      <p>From buttery foie gras and perfectly seared scallops to locally inspired fusion dishes, every course is crafted to deliver balance, precision, and creativity. To complete your <strong>exclusive dining experience in Bali</strong>, pair your meal with a selection from the restaurant's curated wine list, featuring French vintages and boutique international labels.</p>
+
+      <h2>The Ambiance: A Symphony of Elegance and Emotion</h2>
+      <p>Beyond the cuisine, The Club Bali captures the essence of exclusivity through its design and atmosphere. The intimate lighting, soft music, and refined décor create a feeling of effortless sophistication. Each table is thoughtfully arranged to provide privacy and comfort, allowing guests to fully immerse themselves in the evening's sensory journey.</p>
+      <p>Whether you choose to dine indoors surrounded by artful interiors or under the stars in the tropical garden setting, The Club Bali ensures that every moment feels like a curated escape — an indulgent retreat from the everyday.</p>
+
+      <h2>What Makes The Club Bali's Dining Experience Exclusive</h2>
+      <p>What sets The Club Bali apart is its dedication to craftsmanship. Every element, from the chef's culinary techniques to the mixologist's creative cocktails, reflects a commitment to excellence.</p>
+      <p>As noted by <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a> and The Bali Bible, The Club Bali has earned its place among the island's top luxury dining destinations. According to <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's Bali fine dining listings</a>, guests praise its impeccable service, world-class menu, and ambiance that feels both refined and personal — a hallmark of true exclusivity.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>What makes a dining experience "exclusive" at The Club Bali?</strong></dt>
+          <dd>It's the combination of personalized service, French-inspired cuisine, curated wines, and an intimate setting that defines true exclusivity.</dd>
+
+          <dt><strong>Can I book a private dining experience?</strong></dt>
+          <dd>Yes, The Club Bali offers private table arrangements and customizable menus for special occasions such as anniversaries and proposals.</dd>
+
+          <dt><strong>Is there a dress code for The Club Bali?</strong></dt>
+          <dd>Smart-casual attire is recommended to complement the refined ambiance of the venue.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Indulge in Bali's Most Exclusive Dining Experience</h2>
+        <p>Discover what it means to dine beyond expectation. At The Club Bali, every detail — from the plating to the playlist — is designed to awaken your senses and elevate your evening. Experience a truly <strong>exclusive dining experience in Bali</strong>, where passion, flavor, and elegance unite.</p>
+        <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
+      </footer>
+    </article>
+  `,
+  },
+  {
+    id: "bali-article-25",
+    title: "Private Pool Event Bali | Luxury Villa Parties and Celebrations",
+    excerpt:
+      "Host the ultimate private pool event in Bali. Discover villas, chefs, and luxury setups for intimate dinners, weddings, and all-night parties in paradise.",
+    description:
+      "There's something magnetic about Bali nights — warm air, glowing lanterns, and the sound of music echoing off the water. For those seeking an unforgettable way to celebrate, a private pool event in Bali transforms any occasion into something spectacular. Whether it's an intimate dinner, a milestone birthday, or a luxurious gathering with friends, the island offers an endless array of villas and venues designed for moments that feel personal and extraordinary.",
+    image_url:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    category: "Events",
+    published_at: new Date("2025-11-13").toISOString(), // November 13, 2025
+    fullContent: `
+    <article>
+      <header>
+        <h1>Where Can You Host a Private Pool Event in Bali?</h1>
+      </header>
+      
+      <p>There's something magnetic about Bali nights — warm air, glowing lanterns, and the sound of music echoing off the water. For those seeking an unforgettable way to celebrate, a <strong>private pool event in Bali</strong> transforms any occasion into something spectacular. Whether it's an intimate dinner, a milestone birthday, or a luxurious gathering with friends, the island offers an endless array of villas and venues designed for moments that feel personal and extraordinary.</p>
+      <p>Here, the backdrop isn't just the setting — it's part of the memory. Sunset skies melt into soft lights, the pool shimmers with reflections, and laughter carries through the tropical breeze. Hosting your own private event in Bali means you don't just attend the party — you create it.</p>
+
+      <h2>The Best Villas for Private Pool Events</h2>
+      <p>Bali's villas are famous for blending privacy with opulence. In Canggu, you'll find spacious retreats like The Palm House or Villa Mana, known for their infinity pools and expansive outdoor spaces that can be styled for any occasion — from tropical dinner setups to all-night DJ parties.</p>
+      <p>Over in Uluwatu, The Edge Bali stands on dramatic cliffs with ocean views that make every event feel cinematic. Many luxury properties include private chefs, event planners, and professional sound systems to ensure every moment flows seamlessly.</p>
+      <p>To discover hidden gems, browse Bali Villa Finder's private event listings or Asia Dreams Magazine's villa recommendations. Each highlights spaces that can be customized to match your theme, whether minimalist elegance or bold tropical glamour.</p>
+      <p>For dining inspiration to elevate your menu, check out our piece on <a href="https://theclubbali.com/french-food-and-dj-bali">French Food and DJs in Bali</a> — perfect if you want to mix gourmet flavors with music for a truly elevated evening.</p>
+
+      <h2>Why Private Events Are Perfect in Bali</h2>
+      <p>Bali's private pool events offer more than luxury — they offer freedom. You choose the guest list, the music, the menu, and the pace. The island's service culture is exceptional, meaning even the most spontaneous parties feel curated and effortless. You can hire a local chef to design a tasting menu, set up tiki bars with handcrafted cocktails, or invite a live DJ to spin ambient tunes as the night unfolds.</p>
+      <p>If you want to add a romantic touch, candlelight and floral floats can transform a simple dinner into a cinematic experience. For something more exclusive, many villas coordinate fire dancers, acoustic bands, or mixologists who craft cocktails using fresh Balinese ingredients.</p>
+      <p>When the night winds down, your guests can step from the dance floor into the pool or relax in cabanas with soft background music. And if you want to make a lasting impression, contact The Club Bali team through their official page to explore how they can tailor an event that captures your vision perfectly.</p>
+
+      <section>
+        <h2>FAQs</h2>
+        <dl>
+          <dt><strong>What's included in a private villa event package?</strong></dt>
+          <dd>Most offer catering, staff, lighting, and music setup — but every villa can customize options to your budget and style.</dd>
+
+          <dt><strong>How far in advance should I book?</strong></dt>
+          <dd>At least 4–6 weeks ahead, especially during high season (June–September).</dd>
+
+          <dt><strong>Can I bring my own vendors?</strong></dt>
+          <dd>Yes, many villas are flexible and welcome outside planners, chefs, and DJs.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <h2>Conclusion</h2>
+        <p>Bali's <strong>private pool events</strong> are more than parties — they're personal masterpieces. Whether you want intimacy or energy, you can turn any villa into a world of your own. From concept to celebration, the island's luxury and creativity make every gathering feel effortlessly magical. So when you're ready to plan your dream evening, explore <a href="https://theclubbali.com">The Club Bali's homepage</a> — where dining, design, and unforgettable nights all come together in perfect harmony.</p>
         <p><strong>🌐 Visit <a href="https://theclubbali.com" class="text-primary hover:underline">theclubbali.com</a> to explore the menu and reserve your table today.</strong></p>
       </footer>
     </article>
@@ -978,26 +1407,20 @@ const staticArticles = [
       </header>
       
       <p>If you're exploring Bali and wondering about the <strong>best places to eat near Kerobokan</strong>, you're in for a treat. This vibrant area, nestled between Seminyak and Canggu, has become a hotspot for culinary creativity — from beachside cafés to elegant fine dining restaurants.</p>
-
       <p>Among these gems, The Club Bali stands out as a destination where French artistry meets Balinese soul. Located just off Batu Belig, this stylish restaurant offers a blend of refined gastronomy, warm island hospitality, and an atmosphere that captures the true essence of Bali's dining culture.</p>
 
       <h2>A Culinary Journey at The Club Bali</h2>
       <p>At The Club Bali, dining is not just about food — it's about an experience that lingers. The menu brings together authentic French dishes crafted with local ingredients and timeless European techniques.</p>
-
       <p>Whether you're savoring a perfectly cooked steak au poivre, a delicate seafood risotto, or a rich chocolate soufflé, every dish is designed to celebrate the balance between elegance and flavor. Pair your meal with selections from our curated French wine list or signature cocktails infused with tropical flair.</p>
-
       <p>For those seeking both sophistication and comfort, The Club Bali is one of the top <strong>places to eat near Kerobokan</strong> that effortlessly merges fine dining with Bali's relaxed island charm.</p>
 
       <h2>Beyond Dining: Ambiance and Entertainment</h2>
       <p>As the evening unfolds, The Club Bali transforms into a sensory retreat. Candlelit tables, curated playlists, and occasional live music performances create a romantic and refined atmosphere. It's the ideal setting for <strong>dinner for couples in Bali</strong>, where conversation flows as smoothly as the wine.</p>
-
       <p>Whether you're planning a quiet date, a special celebration, or simply searching for a unique <strong>restaurant with wine pairing in Bali</strong>, The Club Bali offers a dining experience that's both memorable and meaningful.</p>
 
       <h2>Why The Club Bali Tops Kerobokan's Dining Scene</h2>
       <p>What makes The Club Bali one of the <strong>best restaurants near Kerobokan</strong> is its commitment to artistry, authenticity, and ambiance. The space blends Parisian-inspired design with Balinese textures, creating a venue that feels both elegant and inviting.</p>
-
       <p>Every ingredient is sourced from local farms, every plate crafted with intention, and every guest treated like family. As highlighted by <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a> and The Bali Bible, Kerobokan is home to a growing number of world-class dining venues — but The Club Bali remains a standout for travelers seeking a blend of French sophistication and Balinese warmth.</p>
-
       <p>For those looking for reliable recommendations, <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's list of top Kerobokan restaurants</a> also features The Club Bali as one of the must-visit destinations for its exceptional service and dining experience.</p>
 
       <section>
@@ -1040,24 +1463,19 @@ const staticArticles = [
       </header>
       
       <p>If you're looking for a <strong>luxury restaurant in Bali</strong>, you're not just searching for great food — you're seeking an experience that engages every sense. Bali's dining scene is rich with culture and creativity, but few destinations capture the essence of sophistication quite like The Club Bali in Kerobokan.</p>
-
       <p>Here, French culinary artistry meets the island's tropical spirit. From the moment you arrive, you'll feel the rhythm of Bali's charm intertwined with Parisian elegance — a perfect harmony of style, flavor, and ambiance that defines what true luxury dining should be.</p>
 
       <h2>The Dining Experience: French Elegance, Balinese Soul</h2>
       <p>At The Club Bali, luxury isn't about extravagance — it's about precision, passion, and purpose. The restaurant's French-trained chef brings a wealth of experience from Parisian kitchens, crafting dishes that celebrate both tradition and innovation.</p>
-
       <p>Expect a menu that features refined French-Balinese fusion cuisine — delicate seafood, slow-cooked meats, and locally inspired creations, all beautifully plated with artistic flair. Every ingredient is carefully sourced from Bali's farms and markets, ensuring freshness in every bite.</p>
-
       <p>Pair your meal with selections from a thoughtfully curated wine list or indulge in handcrafted cocktails infused with tropical flavors — each sip and bite designed to elevate your evening.</p>
 
       <h2>The Ambiance: Where Every Detail Speaks Luxury</h2>
       <p>Step inside The Club Bali and you'll instantly feel the difference. The interiors blend contemporary design with subtle nods to French elegance — candlelit tables, soft lighting, and soothing background music create an atmosphere that feels both intimate and indulgent.</p>
-
       <p>Guests can choose between the stylish indoor dining room or the alfresco terrace, where the warm evening breeze enhances every flavor. Whether it's a <strong>romantic dinner for couples in Bali</strong> or a gathering with friends, The Club Bali sets the perfect stage for unforgettable moments.</p>
 
       <h2>Why The Club Bali Defines Luxury Dining</h2>
       <p>What sets The Club Bali apart is its commitment to creating not just a meal, but an experience. Each visit is curated with care — from attentive service to perfectly timed courses and elegant presentation.</p>
-
       <p>As featured on <a href="https://bali.com" class="text-primary hover:underline">Bali.com</a> and The Bali Bible, The Club Bali consistently ranks among the top <strong>luxury restaurants in Bali</strong> for its artistry and attention to detail. Guests on <a href="https://tripadvisor.com" class="text-primary hover:underline">TripAdvisor's Bali fine dining listings</a> praise the restaurant for its impeccable service, refined menu, and romantic setting — ideal for those who appreciate culinary excellence in a serene, upscale environment.</p>
 
       <section>
@@ -1100,25 +1518,18 @@ const staticArticles = [
       </header>
       
       <p>Kerobokan is where Bali slows down — trading the rush of Seminyak's nightlife for elegance, space, and understated luxury. It's a place where <strong>fine dining</strong> takes on a quieter confidence, where chefs craft with intention, and where every plate feels personal. The area may be calm, but beneath its relaxed surface lies a collection of restaurants that rival the best in Southeast Asia.</p>
-
       <p>For travelers who appreciate the art of dining — the kind that pairs detail with atmosphere — Kerobokan delivers experiences that are both grounded and indulgent.</p>
 
       <h2>The Essence of Fine Dining in Kerobokan</h2>
       <p>Unlike the louder venues of neighboring Seminyak, Kerobokan's fine dining scene thrives on intimacy. Restaurants here are hidden among rice fields and tropical courtyards, designed for guests who prefer conversation over chaos.</p>
-
       <p>Start your evening at Sardine, a beloved restaurant surrounded by emerald-green paddies. The open-air bamboo pavilion sets the tone for an evening that's equal parts natural and refined. The menu, centered around freshly caught seafood, is both French-inspired and distinctly Balinese in its simplicity.</p>
-
       <p>For something more avant-garde, visit Nūde Bali, known for its creative plating and global fusion. Every dish tells a story — from delicate foie gras paired with tropical fruits to charcoal-grilled lobster drizzled in herb butter. Then there's <strong>The Club Bali</strong>, Kerobokan's modern fusion destination where French fine dining meets live entertainment and craft cocktails.</p>
-
       <p>If you want to plan your next dinner adventure, browse Luxury Asia Insider's restaurant guide or explore Bali Eater's fine dining listings for curated recommendations on where to experience world-class dining in Bali.</p>
 
       <h2>Why Kerobokan's Fine Dining Feels So Special</h2>
       <p>Kerobokan has mastered the balance between sophistication and serenity. You won't find flashing lights or noisy crowds here — just thoughtful service, exquisite design, and cuisine that celebrates both culture and craft.</p>
-
       <p>Many chefs source directly from nearby farms, creating menus that evolve with the seasons. Wine pairings are selected with care, desserts are handcrafted, and every detail — from the table setting to the final espresso — speaks of refinement.</p>
-
       <p>After dinner, guests can transition effortlessly into Bali's nightlife or return to a private villa for drinks under the stars. For an event that blends gourmet dining with music and ambiance, take a look at our feature on <a href="https://theclubbali.com/french-food-and-dj-bali">French Food and DJs in Bali</a>.</p>
-
       <p>If you're planning a special evening, reach out to the team at The Club Bali through their official contact page. Their expert planners can arrange bespoke tasting menus, private dining rooms, and even live DJ sets — making it one of the top destinations for <strong>fine dining in Bali</strong>.</p>
 
       <section>
@@ -1149,7 +1560,7 @@ const staticArticles = [
     excerpt:
       "Experience Seminyak's best French restaurants blending fine dining, ocean views, and vibrant nightlife. Taste French elegance with a Balinese touch.",
     description:
-      "Seminyak is where Bali's culinary soul meets modern sophistication. Its streets are lined with restaurants that merge European refinement with tropical ease, and none do it better than the French establishments tucked among its palm-lined avenues.",
+      "Seminyak is where Bali's culinary soul meets modern sophistication. Its streets are lined with restaurants that merge European refinement with tropical ease, and none do it better than the French establishments tucked among its palm-lined avenues. Here, the art of dining is elevated to something almost poetic — candlelight flickers over fine glassware, aromas of butter and herbs fill the air, and the evening feels suspended in time.",
     image_url:
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
     category: "French Cuisine",
@@ -1161,23 +1572,17 @@ const staticArticles = [
       </header>
       
       <p>Seminyak is where Bali's culinary soul meets modern sophistication. Its streets are lined with restaurants that merge European refinement with tropical ease, and none do it better than the <strong>French establishments</strong> tucked among its palm-lined avenues. Here, the art of dining is elevated to something almost poetic — candlelight flickers over fine glassware, aromas of butter and herbs fill the air, and the evening feels suspended in time.</p>
-
       <p>For travelers or locals seeking something more than just a meal, <strong>French restaurants in Seminyak</strong> offer an experience that blends passion, precision, and the unmistakable warmth of Bali's hospitality.</p>
 
       <h2>Where Culinary Craft Meets Atmosphere</h2>
       <p>Start with Bistro à Table Seminyak, where delicate French sauces meet locally sourced seafood. The restaurant's minimalist interior and soft lighting create a relaxed, upscale environment perfect for romantic dinners or quiet celebrations. Then, there's <strong>The Club Bali</strong>, a true gem where gourmet French cuisine transforms into nightlife magic once the DJ starts spinning. Here, the line between fine dining and entertainment blurs beautifully — one moment you're savoring Duck Confit, the next, you're surrounded by soft beats and glowing lights.</p>
-
       <p>For something more rustic, Chez Gado Gado remains a Seminyak classic. Perched on the beachfront, it serves exquisite French-Asian fusion cuisine with ocean views that rival any postcard. Enjoy seared foie gras while watching the sky shift from pink to gold — a perfect prelude to a night of dancing or quiet conversation.</p>
-
       <p>If you're planning your visit, check out Tatler Asia's Bali dining guide or Epicure Asia for reviews of the island's top French-inspired kitchens. And if you're looking for event-worthy venues, our feature on <a href="https://theclubbali.com/private-pool-event-bali">Private Pool Event Bali</a> explores how to turn villa dining into a personal celebration.</p>
 
       <h2>The Seminyak Dining Experience</h2>
       <p>Dining in Seminyak is more than just food — it's a feeling. The ambiance of these <strong>French restaurants</strong> is intentionally curated: elegant yet unpretentious, luxurious but inviting. Chefs work with local farmers to source fresh herbs, spices, and vegetables, ensuring every dish captures both French finesse and Balinese freshness.</p>
-
       <p>As the evening continues, it's not uncommon for the atmosphere to shift — music grows softer, lights dim lower, and guests linger over dessert and fine wine. Each restaurant becomes a world of its own, where laughter, aroma, and conversation blend effortlessly.</p>
-
       <p>To explore more about nightlife transitions after dinner, visit <a href="https://theclubbali.com/french-food-and-dj-bali">French Food and DJs in Bali</a> — a perfect guide if you enjoy rhythm after refinement.</p>
-
       <p>When you're ready to book a table or host an intimate gathering, reach out to The Club Bali team through their contact page. Their curated French dining experiences are tailored for guests who appreciate both taste and atmosphere, whether for a romantic evening or a private event.</p>
 
       <section>
@@ -1209,7 +1614,7 @@ const staticArticles = [
     excerpt:
       "Experience Bali's elegant nightlife with fine French dining, cocktails, and live DJ sets in Kerobokan and Seminyak's most stylish venues.",
     description:
-      "In Bali, dining is more than a meal — it's an experience that moves, changes, and comes alive. Nowhere is this truer than in the island's French restaurants that blend refined cuisine with live DJ performances.",
+      "In Bali, dining is more than a meal — it's an experience that moves, changes, and comes alive. Nowhere is this truer than in the island's French restaurants that blend refined cuisine with live DJ performances. Imagine tasting Lobster Thermidor while soft beats echo under candlelight, or sipping champagne as tropical air drifts through open terraces.",
     image_url:
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
     category: "Nightlife & Dining",
@@ -1221,23 +1626,17 @@ const staticArticles = [
       </header>
       
       <p>In Bali, dining is more than a meal — it's an experience that moves, changes, and comes alive. Nowhere is this truer than in the island's French restaurants that blend refined cuisine with live DJ performances. Imagine tasting Lobster Thermidor while soft beats echo under candlelight, or sipping champagne as tropical air drifts through open terraces. For food lovers who crave rhythm and refinement, Bali's <strong>French food and music culture</strong> offer a night that's both sensual and unforgettable.</p>
-
       <p>Every detail — from the plating to the playlist — is part of the story. Here, dinner doesn't signal the end of the night. It's only the beginning.</p>
 
       <h2>Where French Cuisine Meets Music</h2>
       <p>Begin in Kerobokan, where Métis Restaurant sets the standard for French-Mediterranean dining. Nestled among lotus ponds and gardens, it offers dishes that balance art and flavor — think duck confit, truffle risotto, and delicate tarts. Evenings often feature ambient background music, adding rhythm to the refined atmosphere without overpowering conversation.</p>
-
       <p>In Seminyak, <strong>The Club Bali</strong> brings an entirely different energy. Guests enjoy French fine dining before the lights dim, the tables clear, and the room transforms into an intimate lounge. Local and international DJs spin deep house, disco, and Balearic beats that perfectly match the sophistication of the setting. The result is an atmosphere where fine wine and rhythm intertwine effortlessly.</p>
-
       <p>For a beachside alternative, Cocoon Beach Club pairs French-inspired menus with laid-back DJ sets. White cabanas, glowing pools, and curated playlists create a sensory experience that transitions seamlessly from dining to dancing.</p>
-
       <p>Explore The Beat Bali's nightlife listings for event schedules or Now Bali's dining recommendations for updated restaurant features. And if you're drawn to tranquility after a lively night, our guide to <a href="https://theclubbali.com/kerobokan-fine-dining">Kerobokan Fine Dining</a> highlights quiet escapes where music fades and flavor takes the stage.</p>
 
       <h2>Why This Blend Works So Well</h2>
       <p>French cuisine and music share something vital — both are about feeling. In Bali, this connection deepens under the island's sky. You'll taste the precision of Parisian kitchens mixed with the bold ingredients of Indonesia, while the rhythm of tropical beats keeps the mood alive.</p>
-
       <p>Dining here becomes performance. The plating, lighting, and tempo of the music all shape how the night unfolds. Some venues even collaborate with visiting DJs or sound curators to complement seasonal menus. It's thoughtful, immersive, and impossibly chic.</p>
-
       <p>If you prefer a more personalized setting, our article on <a href="https://theclubbali.com/private-pool-event-bali">Private Pool Event Bali</a> explores how villas and resorts can recreate the same experience privately — complete with chefs, cocktails, and curated soundtracks.</p>
 
       <section>
@@ -1308,23 +1707,54 @@ const ArticleDetailPage = () => {
 
   if (!article) {
     return (
-      <div className="bg-background text-foreground font-sans min-h-screen">
-        <Navbar />
-        <main className="pt-20 section-padding">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="font-cormorant text-4xl font-bold mb-4">
-              Article Not Found
-            </h1>
-            <p className="text-foreground/70 mb-8">
-              The article you're looking for doesn't exist.
-            </p>
-            <Button asChild variant="primary">
-              <Link to="/articles">Back to Articles</Link>
-            </Button>
-          </div>
-        </main>
-        <Footer content={content} />
-      </div>
+      <>
+        <Helmet>
+          <title>Article Not Found | The Club Bali</title>
+          <meta
+            name="description"
+            content="The article you're looking for doesn't exist. Browse our collection of articles about fine dining, nightlife, and experiences at The Club Bali."
+          />
+        </Helmet>
+        <div className="bg-background text-foreground font-sans min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-1 flex items-center justify-center py-20 px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="max-w-md w-full text-center"
+            >
+              <div className="mb-6 flex justify-center">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl"></div>
+                  <div className="relative bg-card border border-border rounded-full p-6">
+                    <FileQuestion className="w-16 h-16 text-primary" />
+                  </div>
+                </div>
+              </div>
+              <h1 className="font-cormorant text-4xl md:text-5xl font-bold mb-4 text-foreground">
+                Article Not Found
+              </h1>
+              <p className="text-foreground/70 mb-8 text-lg">
+                The article you're looking for doesn't exist or may have been
+                moved.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild variant="default" className="group">
+                  <Link to="/articles">
+                    <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+                    Back to Articles
+                  </Link>
+                </Button>
+                <Button asChild variant="outline">
+                  <Link to="/">Go to Home</Link>
+                </Button>
+              </div>
+            </motion.div>
+          </main>
+          <Footer content={content} />
+        </div>
+      </>
     );
   }
 
