@@ -10,6 +10,7 @@ export default function iframeRouteRestorationPlugin() {
           "https://horizons-frontend-local.hostinger.dev",
           "https://baliwebsite-production.up.railway.app",
           "https://www.theclubbali.com",
+          "https://theclubbali.com",
       ];
 
         // Check to see if the page is in an iframe
