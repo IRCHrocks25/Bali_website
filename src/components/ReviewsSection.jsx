@@ -95,7 +95,7 @@ const ReviewsSection = () => {
   }
 
   return (
-    <section id="reviews" className="py-20 bg-card/30">
+    <section id="reviews" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -105,10 +105,13 @@ const ReviewsSection = () => {
           className="text-center mb-12 space-y-4"
         >
           <div>
-            <h2 className="text-4xl md:text-5xl font-cormorant font-bold text-primary mb-4">
+            <p className="font-script text-3xl md:text-4xl text-primary mb-2">
+              {content.reviews_label || 'Testimonials'}
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-bold text-white mb-4">
               {content.reviews_title || 'What Our Guests Say'}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               {content.reviews_subtitle || 'Hear from those who have experienced our hospitality'}
             </p>
           </div>

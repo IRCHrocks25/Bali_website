@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { UtensilsCrossed } from 'lucide-react';
 import { usePageContent } from '@/hooks/usePageContent';
 
 const MenuSection = ({ onMenuClick }) => {
@@ -12,25 +11,32 @@ const MenuSection = ({ onMenuClick }) => {
   }
 
   return (
-    <section id="menu" className="py-20 bg-card/30">
+    <section id="menu" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 text-white order-2 lg:order-1"
           >
-            <div className="flex items-center gap-3 mb-4">
-              <UtensilsCrossed className="h-8 w-8 text-primary" />
-              <h2 className="text-4xl md:text-5xl font-cormorant font-bold text-primary">
-                {content.menu_title || 'Our Menu'}
-              </h2>
-            </div>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              {content.menu_subtitle || 'Explore our culinary offerings'}
+            <p className="font-script text-4xl md:text-5xl lg:text-6xl text-primary mb-4">
+              Our Menu
             </p>
+            <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
+              French Technique,
+              <br />
+              Balinese Soul,
+            </h2>
+            <div className="mt-8 space-y-4 max-w-2xl">
+              <p className="text-sm md:text-base text-white/80 leading-relaxed font-sans">
+                Explore a menu where French classics are reimagined with the vibrant flavors of Bali. Every dish tells a story of passion, creativity, and the finest local ingredients.
+              </p>
+              <p className="text-sm md:text-base text-white/80 leading-relaxed font-sans">
+                Our menu celebrates the finest French techniques while honoring the vibrant flavors of Bali. Each dish is a carefully crafted fusion of two culinary worlds.
+              </p>
+            </div>
             <Button onClick={onMenuClick} variant="primary" size="lg" className="mt-6">
               View Full Menu
             </Button>
@@ -41,11 +47,12 @@ const MenuSection = ({ onMenuClick }) => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
+            className="w-full order-1 lg:order-2"
           >
             <img
-              src={content.menu_image_url || 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800'}
+              src={content.menu_image_url || '/images/hero/culinary_journey.png'}
               alt="Menu Preview"
-              className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              className="w-full h-auto object-cover"
             />
           </motion.div>
         </div>

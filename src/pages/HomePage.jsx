@@ -7,8 +7,8 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import MenuSection from '@/components/MenuSection';
+import ExclusiveEventsSection from '@/components/ExclusiveEventsSection';
 import UgcVideoSection from '@/components/UgcVideoSection';
-import EventsSection from '@/components/EventsSection';
 import ReviewsSection from '@/components/ReviewsSection';
 import ArticleSection from '@/components/ArticleSection';
 import ContactSection from '@/components/ContactSection';
@@ -38,8 +38,8 @@ const HomePage = () => {
           <HeroSection />
           <AboutSection />
           <MenuSection onMenuClick={() => setIsMenuOpen(true)} />
+          <ExclusiveEventsSection />
           <UgcVideoSection />
-          <EventsSection content={content} />
           <ArticleSection />
           <ReviewsSection />
           <ContactSection />

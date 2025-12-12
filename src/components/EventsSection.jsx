@@ -165,8 +165,11 @@ const EventsSection = ({ content }) => {
             visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
           }}
         >
-          <h2 className="font-cormorant text-5xl md:text-6xl font-medium text-foreground">{content.events_title}</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/70">
+          <p className="font-script text-3xl md:text-4xl text-primary mb-2">
+            {content.events_label || 'Events'}
+          </p>
+          <h2 className="font-cormorant text-4xl md:text-5xl lg:text-6xl font-bold text-white">{content.events_title}</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-white/90">
             {content.events_subtitle}
           </p>
         </motion.div>

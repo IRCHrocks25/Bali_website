@@ -49,10 +49,13 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-cormorant font-bold text-primary mb-4">
-            {content.contact_title || 'Get In Touch'}
+          <p className="font-script text-3xl md:text-4xl text-primary mb-2">
+            {content.contact_label || 'Get In Touch'}
+          </p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-bold text-white mb-4">
+            {content.contact_title || 'Visit Us'}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
             {content.contact_subtitle || 'We would love to hear from you'}
           </p>
         </motion.div>
@@ -72,14 +75,14 @@ const ContactSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-start gap-4 p-4 rounded-lg bg-card/50 hover:bg-card transition-colors duration-300"
+                className="flex items-start gap-4 p-4 rounded-lg bg-card/30 hover:bg-card/50 transition-colors duration-300 border border-border/30"
               >
                 <div className="p-3 rounded-full bg-primary/10">
                   <item.icon className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">{item.label}</h3>
-                  <p className="text-muted-foreground">{item.value}</p>
+                  <h3 className="font-semibold text-white mb-1">{item.label}</h3>
+                  <p className="text-white/80">{item.value}</p>
                 </div>
               </motion.div>
             ))}
@@ -102,7 +105,7 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden shadow-2xl h-[400px] lg:h-full"
+            className="overflow-hidden shadow-2xl h-[400px] lg:h-full border border-border/30"
           >
             <iframe
               src={mapEmbedUrl}
