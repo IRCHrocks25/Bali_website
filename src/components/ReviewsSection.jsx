@@ -95,53 +95,50 @@ const ReviewsSection = () => {
   }
 
   return (
-    <section id="reviews" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="reviews" className="py-16 md:py-20 lg:py-24 bg-[#000000]">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-12 space-y-4"
+          className="text-center mb-12 md:mb-16"
         >
-          <div>
-            <p className="font-script text-3xl md:text-4xl text-primary mb-2">
-              {content.reviews_label || 'Testimonials'}
-            </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-bold text-white mb-4">
-              {content.reviews_title || 'What Our Guests Say'}
-            </h2>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              {content.reviews_subtitle || 'Hear from those who have experienced our hospitality'}
-            </p>
-          </div>
+          {/* Main Title */}
+          <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-cormorant font-bold text-white mb-8 md:mb-10">
+            Reviews & Raves
+          </h2>
 
-          {meta.rating && (
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <div className="flex items-center gap-3 bg-background/70 px-5 py-3 rounded-full shadow-lg border border-white/10">
-                <div className="flex items-center gap-1">
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-300 font-sans mb-12 md:mb-16 max-w-4xl mx-auto">
+            Hear what our guests have to say about their experience at The Club Bali. Your memorable night awaits.
+          </p>
+
+          {/* Star Rating Component */}
+          <div className="flex justify-center mb-12">
+            <div className="inline-flex flex-col items-center justify-center gap-3 px-8 py-6 rounded-lg border border-gray-800 bg-gray-900/50">
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1.5">
                   {[...Array(5)].map((_, index) => (
                     <Star
                       key={index}
-                      className={`h-5 w-5 ${
-                        index < Math.round(meta.rating)
-                          ? 'text-primary fill-primary'
-                          : 'text-muted-foreground'
+                      className={`h-8 w-8 md:h-9 md:w-9 ${
+                        index < Math.round(meta.rating || 5)
+                          ? 'text-[#C9A24D] fill-[#C9A24D]'
+                          : 'text-gray-600'
                       }`}
                     />
                   ))}
                 </div>
-                <div className="text-left">
-                  <p className="text-2xl font-semibold text-foreground leading-none">
-                    {meta.rating.toFixed(1)}
-                  </p>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground">
-                    {meta.user_ratings_total || 0} reviews on {meta.source}
-                  </p>
-                </div>
+                <span className="text-4xl md:text-5xl font-bold text-white ml-3">
+                  {(meta.rating || 5.0).toFixed(1)}
+                </span>
               </div>
+              <p className="text-sm md:text-base uppercase tracking-widest text-gray-400 font-sans">
+                {meta.user_ratings_total || 111} REVIEWS ON {meta.source?.toUpperCase() || 'GOOGLE'}
+              </p>
             </div>
-          )}
+          </div>
         </motion.div>
 
         {loading ? (

@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { format, parseISO } from "date-fns";
 import { enUS } from "date-fns/locale";
-import { Calendar, ArrowRight, Loader2, BookOpen } from "lucide-react";
+import { Calendar, ArrowRight, Loader2 } from "lucide-react";
 import { supabase } from "@/lib/customSupabaseClient";
 import { usePageContent } from "@/hooks/usePageContent";
 import { staticArticles } from "@/data/articles";
@@ -20,54 +19,58 @@ const ArticleCard = ({ article }) => {
 
   return (
     <motion.div
-      className="bg-card rounded-2xl overflow-hidden shadow-lg group flex flex-col h-full"
+      className="bg-[#1a1a1a] rounded-lg overflow-hidden group flex flex-col h-full"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5 }}
     >
-      {article.category && (
-        <div className="px-6 pt-6">
-          <span className="text-xs uppercase font-semibold tracking-wider bg-primary/20 text-primary px-3 py-1 rounded-full">
-            {article.category}
-          </span>
-        </div>
-      )}
       <div className="p-6 flex flex-col flex-grow">
-        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+        {article.category && (
+          <div className="mb-4">
+            <span className="text-xs uppercase font-semibold tracking-wider bg-primary text-primary-foreground px-3 py-1.5 rounded">
+              {article.category}
+            </span>
+          </div>
+        )}
+        <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
           {publishedDate && (
-            <div className="flex items-center gap-1">
-              <Calendar className="w-4 h-4 text-primary" />
-              {format(publishedDate, "d MMM yyyy", {
-                locale: enUS,
-              })}
+            <div className="flex items-center gap-1.5">
+              <Calendar className="w-4 h-4 text-gray-400" />
+              <span className="font-sans">
+                {format(publishedDate, "d MMM yyyy", {
+                  locale: enUS,
+                })}
+              </span>
             </div>
           )}
         </div>
-        <h3 className="font-cormorant text-2xl font-bold mb-3 flex-grow text-foreground">
+        <h3 className="font-cormorant text-xl md:text-2xl font-semibold mb-4 flex-grow text-white leading-tight">
           {article.title}
         </h3>
-        <p className="text-foreground/70 text-sm mb-6 line-clamp-3">
+        <p className="text-gray-300 text-sm md:text-base mb-6 line-clamp-3 font-sans leading-relaxed">
           {article.excerpt || article.description || ""}
         </p>
-        <div className="mt-auto pt-4 border-t border-border">
-          <Button asChild variant="outline" className="w-full group/btn">
-            {article.external_url ? (
-              <a
-                href={article.external_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Read More
-                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-              </a>
-            ) : (
-              <Link to={articleUrl}>
-                Read More
-                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-              </Link>
-            )}
-          </Button>
+        <div className="mt-auto">
+          {article.external_url ? (
+            <a
+              href={article.external_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors font-sans text-sm font-medium group/btn"
+            >
+              READ MORE
+              <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+            </a>
+          ) : (
+            <Link
+              to={articleUrl}
+              className="inline-flex items-center gap-2 border border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors font-sans text-sm font-medium group/btn"
+            >
+              READ MORE
+              <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+            </Link>
+          )}
         </div>
       </div>
     </motion.div>
@@ -133,10 +136,10 @@ const ArticleSection = () => {
   });
 
   return (
-    <section id="articles" className="section-padding bg-card/30">
-      <div className="container mx-auto px-4">
+    <section id="articles" className="py-16 md:py-20 lg:py-24 bg-[#000000]">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-12 md:mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -149,13 +152,10 @@ const ArticleSection = () => {
             },
           }}
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <BookOpen className="h-8 w-8 text-primary" />
-            <h2 className="font-cormorant text-5xl md:text-6xl font-medium text-foreground">
-              {content.articles_title || "Latest Articles"}
-            </h2>
-          </div>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/70">
+          <h2 className="font-cormorant text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
+            {content.articles_title || "Latest from The Bali Club"}
+          </h2>
+          <p className="text-gray-300 text-base md:text-lg font-sans">
             {content.articles_subtitle ||
               "Discover our latest stories, insights, and updates"}
           </p>
@@ -167,25 +167,26 @@ const ArticleSection = () => {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {sortedArticles.slice(0, 3).map((article) => (
                 <ArticleCard key={article.id} article={article} />
               ))}
             </div>
             {sortedArticles.length > 3 && (
               <motion.div
-                className="flex justify-center mt-12"
+                className="flex justify-center mt-12 md:mt-16"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <Button asChild variant="primary" size="lg" className="group">
-                  <Link to="/articles">
-                    View More Articles
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
+                <Link
+                  to="/articles"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg transition-transform transform hover:scale-105 font-sans font-semibold text-base md:text-lg uppercase"
+                >
+                  VIEW MORE ARTICLES
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </motion.div>
             )}
           </>

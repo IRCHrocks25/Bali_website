@@ -12,13 +12,14 @@ const UgcVideoSection = () => {
 
   return (
     <section 
-      id="the-vibe" 
-      className="relative py-20 md:py-32 bg-cover bg-center bg-no-repeat"
+      className="py-20 relative bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: 'url(/images/hero/background2.png)'
       }}
     >
-      <div className="relative container mx-auto px-4">
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -26,11 +27,11 @@ const UgcVideoSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-cormorant font-bold text-primary mb-6">
-            {content.ugc_title || 'The Vibe'}
+          <h2 className="text-4xl md:text-5xl font-cormorant font-bold text-primary mb-4">
+            {content.ugc_title || 'Experience The Vibe'}
           </h2>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-sans">
-            {content.ugc_subtitle || 'Where every moment becomes a memory. Experience the energy, the atmosphere, the essence of The Club Bali.'}
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            {content.ugc_subtitle || 'See what makes us special'}
           </p>
         </motion.div>
 
@@ -39,16 +40,16 @@ const UgcVideoSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative max-w-5xl mx-auto rounded-lg overflow-hidden shadow-2xl group cursor-pointer"
+          className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl group cursor-pointer"
         >
           <img
             src={content.ugc_image_url || 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200'}
             alt="Video Thumbnail"
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-auto aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-black/30 flex items-center justify-center transition-all duration-300 group-hover:bg-black/40">
-            <div className="w-24 h-24 rounded-full bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-2xl">
-              <Play className="h-12 w-12 text-white ml-1" fill="white" />
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 group-hover:bg-black/50">
+            <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+              <Play className="h-10 w-10 text-white ml-1" fill="white" />
             </div>
           </div>
         </motion.div>

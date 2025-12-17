@@ -5,6 +5,7 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
+import ImageCollageSection from '@/components/ImageCollageSection';
 import AboutSection from '@/components/AboutSection';
 import MenuSection from '@/components/MenuSection';
 import ExclusiveEventsSection from '@/components/ExclusiveEventsSection';
