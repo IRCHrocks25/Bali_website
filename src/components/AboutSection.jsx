@@ -41,11 +41,16 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="w-full order-2 lg:order-1"
           >
-            <img
+            <motion.img
               src={imageSrc}
               alt={content?.about_image_alt || "About"}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-lg"
               loading="lazy"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              whileHover={{ scale: 1.02 }}
             />
           </motion.div>
 

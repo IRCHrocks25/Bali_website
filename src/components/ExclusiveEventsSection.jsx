@@ -50,18 +50,23 @@ const ExclusiveEventsSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.55, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className={`relative overflow-hidden rounded-lg shadow-2xl ${
+                  className={`relative overflow-hidden rounded-lg shadow-2xl cursor-pointer group ${
                     isCenter
                       ? 'w-full md:w-[350px] lg:w-[400px] h-[400px] md:h-[500px] lg:h-[600px]'
                       : 'w-full md:w-[280px] lg:w-[320px] h-[350px] md:h-[400px] lg:h-[480px]'
                   }`}
+                  whileHover={{ y: -10, scale: isCenter ? 1.02 : 1.03 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
-                  <img
+                  <motion.img
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-full object-cover"
                     loading="lazy"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500"></div>
                 </motion.div>
               );
             })}
@@ -75,9 +80,15 @@ const ExclusiveEventsSection = () => {
             viewport={{ once: true }}
             className="flex justify-center"
           >
-            <Button className="bg-[#C9A24D] hover:bg-[#d6b15b] text-black rounded-lg px-8 py-4 md:px-10 md:py-6 uppercase tracking-wider text-sm md:text-base font-sans font-semibold shadow-lg transition-transform transform hover:scale-105">
-              REGISTER FOR UPCOMING EVENTS
-            </Button>
+            <motion.div
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <Button className="bg-[#C9A24D] hover:bg-[#d6b15b] text-black rounded-lg px-8 py-4 md:px-10 md:py-6 uppercase tracking-wider text-sm md:text-base font-sans font-semibold shadow-lg hover:shadow-xl hover:shadow-[#C9A24D]/30 transition-all duration-300">
+                REGISTER FOR UPCOMING EVENTS
+              </Button>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

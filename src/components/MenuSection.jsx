@@ -68,12 +68,18 @@ const MenuSection = ({ onMenuClick }) => {
             </div>
 
             {/* CTA Button */}
-            <Button
-              onClick={onMenuClick}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg font-semibold py-6 px-8 md:py-7 md:px-10 rounded-lg transition-transform transform hover:scale-105"
+            <motion.div
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              VIEW FULL MENU
-            </Button>
+              <Button
+                onClick={onMenuClick}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg font-semibold py-6 px-8 md:py-7 md:px-10 rounded-lg shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+              >
+                VIEW FULL MENU
+              </Button>
+            </motion.div>
           </motion.div>
 
           {/* Image - Right */}
@@ -84,11 +90,16 @@ const MenuSection = ({ onMenuClick }) => {
             viewport={{ once: true }}
             className="w-full order-1 lg:order-2"
           >
-            <img
+            <motion.img
               src={content.menu_image_url || '/images/hero/culinary_journey.png'}
               alt={content.menu_image_alt || "French culinary journey"}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover rounded-lg"
               loading="lazy"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              whileHover={{ scale: 1.02 }}
             />
           </motion.div>
         </div>

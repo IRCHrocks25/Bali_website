@@ -159,7 +159,11 @@ const ReviewsSection = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+                <motion.div
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                >
+                  <Card className="h-full hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 cursor-pointer">
                   <CardContent className="p-6 space-y-4">
                     <div className="flex items-center gap-1">
                       {[...Array(5)].map((_, i) => (
@@ -203,6 +207,7 @@ const ReviewsSection = () => {
                     </div>
                   </CardContent>
                 </Card>
+                </motion.div>
               </motion.div>
             ))}
           </div>

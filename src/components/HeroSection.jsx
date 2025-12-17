@@ -93,14 +93,25 @@ const HeroSection = () => {
                     </div>
 
                     {/* Bottom Center Button - Oval shape */}
-                    <div className="flex justify-center pt-6 md:pt-8 pb-0">
-                        <Button
-                            onClick={openWhatsApp}
-                            className="bg-transparent border-2 border-[#C9A24D] text-white hover:bg-[#C9A24D]/10 text-sm md:text-base py-3 px-8 md:py-4 md:px-10 rounded-full font-sans font-semibold uppercase tracking-wider transition-all duration-300 hover:border-[#d6b15b] shadow-lg"
+                    <motion.div 
+                        className="flex justify-center pt-6 md:pt-8 pb-0"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                    >
+                        <motion.div
+                            whileHover={{ scale: 1.05, y: -2 }}
+                            whileTap={{ scale: 0.98 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 17 }}
                         >
-                            {content?.hero_cta_text || "BOOK A TABLE"}
-                        </Button>
-                    </div>
+                            <Button
+                                onClick={openWhatsApp}
+                                className="bg-transparent border-2 border-[#C9A24D] text-white hover:bg-[#C9A24D]/10 text-sm md:text-base py-3 px-8 md:py-4 md:px-10 rounded-full font-sans font-semibold uppercase tracking-wider transition-all duration-300 hover:border-[#d6b15b] shadow-lg hover:shadow-xl hover:shadow-[#C9A24D]/30"
+                            >
+                                {content?.hero_cta_text || "BOOK A TABLE"}
+                            </Button>
+                        </motion.div>
+                    </motion.div>
                 </motion.div>
             </div>
 
@@ -111,17 +122,27 @@ const HeroSection = () => {
                         {images.map((image, index) => (
                             <motion.div
                                 key={index}
-                                className="relative overflow-hidden group aspect-square"
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
+                                className="relative overflow-hidden group aspect-square cursor-pointer"
+                                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                                whileInView={{ opacity: 1, scale: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
+                                transition={{ 
+                                    duration: 0.6, 
+                                    delay: index * 0.1,
+                                    type: "spring",
+                                    stiffness: 100,
+                                    damping: 15
+                                }}
+                                whileHover={{ y: -5 }}
                             >
-                                <img
+                                <motion.img
                                     src={image.src}
                                     alt={image.alt}
-                                    className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                                    className="w-full h-full object-cover"
+                                    whileHover={{ scale: 1.1 }}
+                                    transition={{ duration: 0.5, ease: "easeOut" }}
                                 />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500"></div>
                             </motion.div>
                         ))}
                     </div>

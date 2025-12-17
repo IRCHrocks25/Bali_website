@@ -19,11 +19,12 @@ const ArticleCard = ({ article }) => {
 
   return (
     <motion.div
-      className="bg-[#1a1a1a] rounded-lg overflow-hidden group flex flex-col h-full"
+      className="bg-[#1a1a1a] rounded-lg overflow-hidden group flex flex-col h-full cursor-pointer"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, type: "spring", stiffness: 100, damping: 15 }}
+      whileHover={{ y: -8, scale: 1.02 }}
     >
       <div className="p-6 flex flex-col flex-grow">
         {article.category && (

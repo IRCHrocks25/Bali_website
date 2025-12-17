@@ -86,6 +86,33 @@
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
   }
+  
+  /* Smooth scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+  
+  /* Smooth transitions for all interactive elements */
+  a, button {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  img {
+    @apply transition-transform duration-500 ease-out;
+  }
   ::selection {
     background-color: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
@@ -114,6 +141,50 @@
   .text-shadow-lg {
     text-shadow: 0 4px 10px rgba(0,0,0,0.5);
   }
+  
+  /* Smooth transitions for interactive elements */
+  .smooth-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out;
+  }
+  .hover-lift:hover {
+    @apply -translate-y-1;
+  }
+  
+  .hover-glow {
+    @apply transition-shadow duration-300;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 10px 30px rgba(201, 163, 78, 0.3);
+  }
+  
+  /* Image hover effects */
+  .image-zoom {
+    @apply transition-transform duration-500 ease-out;
+  }
+  .image-zoom:hover {
+    @apply scale-105;
+  }
+  
+  /* Fade in animations */
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
   .article-content {
     @apply text-foreground/90;
   }

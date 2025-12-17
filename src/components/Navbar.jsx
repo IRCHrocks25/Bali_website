@@ -29,13 +29,13 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       animate="visible"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-4 ${
-        isScrolled ? 'bg-background/80 backdrop-blur-lg shadow-md' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out pt-4 ${
+        isScrolled ? 'bg-background/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a 
+          <motion.a 
             href="/" 
             onClick={(e) => {
               e.preventDefault();
@@ -46,20 +46,29 @@ const Navbar = () => {
               }
             }} 
             className="flex items-center"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             <img 
               src="/images/hero/bali_club_logo.png" 
               alt="The Club Bali" 
-              className="h-16 md:h-20 lg:h-24 w-auto"
+              className="h-16 md:h-20 lg:h-24 w-auto transition-all duration-300"
             />
-          </a>
+          </motion.a>
 
-          <Button 
-            onClick={openWhatsApp} 
-            className="bg-[#C9A24D] hover:bg-[#B8903D] text-black font-semibold border-none"
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            BOOK A TABLE
-          </Button>
+            <Button 
+              onClick={openWhatsApp} 
+              className="bg-[#C9A24D] hover:bg-[#B8903D] text-black font-semibold border-none shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              BOOK A TABLE
+            </Button>
+          </motion.div>
         </div>
       </div>
     </motion.nav>
