@@ -29,6 +29,10 @@ const HeroSection = () => {
             alt: 'Dish Presentation'
         },
         {
+            src: '/images/hp_images/HP Image Selection/5fd46993-2be8-4415-8c93-75560a0fbdbf.jpg',
+            alt: 'Culinary Delight'
+        },
+        {
             src: '/images/hp_images/HP Image Selection/IMG_0024.JPG',
             alt: 'Fresh Ingredients'
         },
@@ -55,8 +59,6 @@ const HeroSection = () => {
                     alt="The Club Bali"
                     className="w-full h-full object-cover"
                 />
-                {/* Dark overlay for text readability */}
-                <div className="absolute inset-0 bg-black/40"></div>
             </div>
 
             {/* Main Content - Center/Lower */}
@@ -65,32 +67,17 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-                    className="text-center space-y-4 md:space-y-6 max-w-5xl"
+                    className="text-center space-y-2 md:space-y-3 max-w-5xl"
                 >
                     {/* Main Headline - Overlaying center/lower area */}
-                    <h1 className="font-cormorant text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight">
+                    <h1 className="font-playfair text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[5.5rem] font-light text-white leading-tight whitespace-nowrap">
                         {content?.hero_title || "Where Bali Meets Paradise"}
                     </h1>
 
                     {/* Tagline - Smaller, sans-serif, golden color */}
-                    <p className="text-base md:text-lg lg:text-xl font-sans text-[#D4AF37] max-w-3xl mx-auto">
+                    <p className="text-lg md:text-xl lg:text-2xl font-sans text-[#E8D9A8] max-w-3xl mx-auto">
                         {content?.hero_subtitle || "An unforgettable fusion of French elegance and Balinese soul."}
                     </p>
-
-                    {/* Ghosted/Reflected Text */}
-                    <div className="relative pt-4 md:pt-6 opacity-20">
-                        <div 
-                            className="font-cormorant text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight uppercase"
-                            style={{
-                                transform: 'scaleY(-1)',
-                                transformOrigin: 'top',
-                                filter: 'blur(2px)',
-                                WebkitTransform: 'scaleY(-1)',
-                            }}
-                        >
-                            {content?.hero_title?.toUpperCase() || "WHERE BALI MEETS PARADISE"}
-                        </div>
-                    </div>
 
                     {/* Bottom Center Button - Oval shape */}
                     <motion.div 
@@ -116,9 +103,9 @@ const HeroSection = () => {
             </div>
 
             {/* Image Collage Section - Seamlessly connected */}
-            <div className="relative z-20 w-full bg-[#000000] -mt-20 md:-mt-24 lg:-mt-28">
+            <div className="relative z-20 w-full bg-[#000000] -mt-40 md:-mt-48 lg:-mt-56">
                 <div className="w-full">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2 md:gap-3 lg:gap-4">
+                    <div className="grid grid-cols-4 sm:grid-cols-8 gap-1 md:gap-2">
                         {images.map((image, index) => (
                             <motion.div
                                 key={index}

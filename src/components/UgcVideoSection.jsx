@@ -27,7 +27,7 @@ const UgcVideoSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-cormorant font-bold text-primary mb-4">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-cormorant font-bold text-primary mb-4">
             {content.ugc_title || 'Experience The Vibe'}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

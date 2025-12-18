@@ -26,7 +26,7 @@ const MenuSection = ({ onMenuClick }) => {
             <br />
             The Club Bali has it all."
           </p>
-          <p className="font-cormorant text-primary italic text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+          <p className="font-cormorant text-[#E8D9A8] italic text-xl md:text-2xl lg:text-3xl xl:text-4xl">
             Maxine de Francesco
           </p>
         </motion.div>

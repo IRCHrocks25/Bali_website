@@ -26,6 +26,16 @@ const ArticleCard = ({ article }) => {
       transition={{ duration: 0.5, type: "spring", stiffness: 100, damping: 15 }}
       whileHover={{ y: -8, scale: 1.02 }}
     >
+      {/* Thumbnail Image */}
+      {article.image_url && (
+        <div className="relative w-full h-48 overflow-hidden">
+          <img
+            src={article.image_url}
+            alt={article.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+      )}
       <div className="p-6 flex flex-col flex-grow">
         {article.category && (
           <div className="mb-4">
