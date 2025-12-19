@@ -40,8 +40,16 @@ const ContactSection = () => {
     'https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126214.64971260416!2d115.06457907798894!3d-8.671778268076944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2dd247f71f5aefe7%3A0xd9a780c6d8cb66a4!2sJl.%20Batu%20Belig%20Gg.%20Daksina%20No.1%2C%20Kerobokan%2C%20Kec.%20Kuta%20Utara%2C%20Kabupaten%20Badung%2C%20Bali%2080361%2C%20Indonesia!3m2!1d-8.6717871!2d115.146981!5e0!3m2!1sen!2sph!4v1763059123491!5m2!1sen!2sph';
 
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section 
+      id="contact" 
+      className="py-20 relative bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: 'url(/images/hero/background2.png)'
+      }}
+    >
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,14 +57,11 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="font-script text-3xl md:text-4xl text-primary mb-2">
-            {content.contact_label || 'Get In Touch'}
-          </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-bold text-white mb-4">
-            {content.contact_title || 'Visit Us'}
+            {content.contact_title || 'Get In Touch'}
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            {content.contact_subtitle || 'We would love to hear from you'}
+            {content.contact_subtitle || "We'd love to hear from you. Whether it's for a reservation, a special event, or just to say hello, here's how you can reach us."}
           </p>
         </motion.div>
 
