@@ -1,0 +1,51 @@
+{
+  "rating": 5,
+  "user_ratings_total": 114,
+  "reviews": [
+    {
+      "id": "google-1764427193",
+      "author_name": "Nina Carona (Sheena)",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVU0UUuxkXKozS5nDfx1_SXSrFtuzodz632VJrFsEnIpOZ3P2vXFg=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "2 weeks ago",
+      "text": "One of my favorite places to go for breakfast! And the best part is, the vibe here fits every mood — from easy poolside mornings, to lazy Sunday hangover recovery, to lively jazz nights. This restaurant always delivers the right atmosphere",
+      "time": 1764427193
+    },
+    {
+      "id": "google-1756016769",
+      "author_name": "gerry go",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLv93uLx855eHiRV9HVCwg07NtKQXLASIEQfPqiUJKlmO3wcg=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "I had an amazing experience here at The Club Bali. The owner was our host. Jerome and Alex were very accommodating. The place is cozy. I like the ambience. They were very hospitable and the food was delicious. I would definitely recommend!!!",
+      "time": 1756016769
+    },
+    {
+      "id": "google-1754688301",
+      "author_name": "K. Pick",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI-KOnt29iKcb-voNKW6z0CZk5s_kCcJEWCEQes9bA547Uabw=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "I don't normally do reviews, but this place was awesome! It hasn't been open long and seems to be a well-kept secret. The food was the best we had in Bali (and maybe better than any we've had for a while in the United States where we're from), so we went back again. The owner personally helped us select our food and drinks. Chris, the French chef, personally checked on us and served us our tiramisu. (Apparently, he was very well trained in Toulouse, France.) Each dish was a wonderful experience: amazing in taste, freshness and presentation. Also, the restaurant was very elegantly and tastefully decorated and lighted, which made the whole meal delightful! It's a little more expensive than some restaurants in the area but WELL WORTH IT!\n-CHP & SP",
+      "time": 1754688301
+    },
+    {
+      "id": "google-1759652949",
+      "author_name": "LAKU BALI",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5Lfho3Uu7RqdOflVNEGoHBDzbnibsBd-KDIRhKImBTEuiPcA=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "2 months ago",
+      "text": "Such an amazing spot! The food was honestly exceptional: the ceviche was so fresh and flavorful, and the barramundi perfectly cooked. The staff were super friendly and attentive, and the vibe of the place is just perfect.",
+      "time": 1759652949
+    },
+    {
+      "id": "google-1759479593",
+      "author_name": "Maxine De Francesco",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUIVjE-HPqePf8q_rIynxcelHRjyao4EANcUHJiwovLJZ34iEiMuw=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "2 months ago",
+      "text": "The perfect spot to hang out with friends! The Club Bali has it all: a super cozy atmosphere where you instantly feel at home, a pool to relax and enjoy, and delicious French cuisine that’s perfectly executed. The Sunday event with the DJ is absolutely amazing – the vibe is unmatched. It’s slightly outside of Canggu, which makes it a real hidden gem. The ideal place to chill, share a drink, and create great memories.\n\nAbsolutely love it! 💛",
+      "time": 1759479593
+    }
+  ]
+}
