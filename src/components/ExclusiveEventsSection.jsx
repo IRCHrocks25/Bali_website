@@ -192,9 +192,23 @@ const ExclusiveEventsSection = () => {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
+            {/* Spotlight shadow effect */}
+            <div 
+              className="absolute -inset-8 md:-inset-12 lg:-inset-16 rounded-[40px] blur-3xl opacity-60"
+              style={{
+                background: 'radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 40%, transparent 70%)'
+              }}
+            />
+            <div 
+              className="absolute -inset-4 md:-inset-6 lg:-inset-8 rounded-[32px] blur-2xl opacity-40"
+              style={{
+                background: 'radial-gradient(circle at center, rgba(201,162,77,0.3) 0%, rgba(201,162,77,0.1) 50%, transparent 80%)'
+              }}
+            />
+            
             {/* Glass frame */}
             <div className="absolute -inset-2 md:-inset-3 rounded-[28px] bg-gradient-to-b from-white/10 via-white/5 to-transparent blur-xl" />
-            <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-black/50 shadow-[0_40px_140px_rgba(0,0,0,0.75)] backdrop-blur-md">
+            <div className="relative overflow-hidden rounded-[28px] border-2 border-white/20 bg-black/50 shadow-[0_0_80px_rgba(201,162,77,0.4),0_0_120px_rgba(0,0,0,0.8),0_40px_140px_rgba(0,0,0,0.9)] backdrop-blur-md">
               {/* Aspect - Flexible container */}
               <div className="relative min-h-[520px] md:min-h-[620px] lg:min-h-[720px] flex items-center justify-center">
                 <AnimatePresence initial={false} custom={direction}>
@@ -218,15 +232,15 @@ const ExclusiveEventsSection = () => {
                     {/* Cinematic overlays */}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_35%,rgba(0,0,0,0.70)_100%)]" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
-                    <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
+                    <div className="absolute inset-0 ring-2 ring-inset ring-white/15" />
                   </motion.div>
                 </AnimatePresence>
 
                 {/* Caption card */}
                 <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8">
-                  <div className="grid gap-3 rounded-2xl border border-white/10 bg-black/35 p-5 md:p-6 backdrop-blur-xl">
+                  <div className="grid gap-3 rounded-2xl border-2 border-white/20 bg-black/35 p-5 md:p-6 backdrop-blur-xl">
                     <div className="flex items-center justify-between gap-4">
-                      <span className="inline-flex items-center rounded-full border border-[#C9A24D]/30 bg-[#C9A24D]/10 px-3 py-1 text-xs font-sans tracking-wide text-[#E8D9A8]">
+                      <span className="inline-flex items-center rounded-full border-2 border-[#C9A24D]/50 bg-[#C9A24D]/10 px-3 py-1 text-xs font-sans tracking-wide text-[#E8D9A8]">
                         {active.tag}
                       </span>
                       <span className="text-xs text-white/60">
@@ -284,14 +298,14 @@ const ExclusiveEventsSection = () => {
                 <div className="absolute top-5 right-5 hidden md:flex items-center gap-2">
                   <button
                     onClick={prev}
-                    className="rounded-full border border-white/10 bg-black/40 p-2 text-white/80 hover:text-white hover:bg-black/55 backdrop-blur-md transition"
+                    className="rounded-full border-2 border-white/20 bg-black/40 p-2 text-white/80 hover:text-white hover:bg-black/55 backdrop-blur-md transition"
                     aria-label="Previous image"
                   >
                     <ChevronLeft className="h-5 w-5" />
                   </button>
                   <button
                     onClick={next}
-                    className="rounded-full border border-white/10 bg-black/40 p-2 text-white/80 hover:text-white hover:bg-black/55 backdrop-blur-md transition"
+                    className="rounded-full border-2 border-white/20 bg-black/40 p-2 text-white/80 hover:text-white hover:bg-black/55 backdrop-blur-md transition"
                     aria-label="Next image"
                   >
                     <ChevronRight className="h-5 w-5" />
@@ -300,7 +314,7 @@ const ExclusiveEventsSection = () => {
               </div>
 
               {/* Thumbnail strip (premium feel) */}
-              <div className="border-t border-white/10 bg-black/35">
+              <div className="border-t-2 border-white/20 bg-black/35">
                 <div className="flex gap-2 overflow-x-auto px-4 py-3 md:px-6 md:py-4">
                   {eventImages.map((img, idx) => {
                     const isActive = idx === currentIndex;
@@ -308,10 +322,10 @@ const ExclusiveEventsSection = () => {
                       <button
                         key={idx}
                         onClick={() => goTo(idx)}
-                        className={`group relative h-16 w-24 md:h-20 md:w-32 flex-none overflow-hidden rounded-xl border bg-black/30 transition ${
+                        className={`group relative h-16 w-24 md:h-20 md:w-32 flex-none overflow-hidden rounded-xl border-2 bg-black/30 transition ${
                           isActive
-                            ? "border-[#C9A24D]/60"
-                            : "border-white/10 hover:border-white/25"
+                            ? "border-[#C9A24D]"
+                            : "border-white/20 hover:border-white/30"
                         }`}
                         aria-label={`Go to slide ${idx + 1}`}
                       >

@@ -12,14 +12,15 @@ const UgcVideoSection = () => {
 
   return (
     <section 
-      className="py-20 relative bg-cover bg-center bg-no-repeat"
+      className="relative bg-cover bg-center bg-no-repeat w-full"
       style={{
-        backgroundImage: 'url(/images/hero/background2.png)'
+        backgroundImage: 'url(/images/video%20bg.png)',
+        aspectRatio: '16/9',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
       }}
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 py-20 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +53,7 @@ const UgcVideoSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 100, damping: 15 }}
           viewport={{ once: true }}
-          className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl group cursor-pointer"
+          className="relative max-w-6xl lg:max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-2xl group cursor-pointer"
           whileHover={{ y: -10, scale: 1.02 }}
         >
           <motion.img
