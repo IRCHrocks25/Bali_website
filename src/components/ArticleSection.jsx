@@ -56,7 +56,7 @@ const ArticleCard = ({ article }) => {
             </div>
           )}
         </div>
-        <h3 className="font-cormorant text-xl md:text-2xl font-semibold mb-4 flex-grow text-white leading-tight">
+        <h3 className="font-playfair text-xl md:text-2xl font-semibold mb-4 flex-grow text-white leading-tight">
           {article.title}
         </h3>
         <p className="text-gray-300 text-sm md:text-base mb-6 line-clamp-3 font-sans leading-relaxed">
@@ -163,7 +163,7 @@ const ArticleSection = () => {
             },
           }}
         >
-          <h2 className="font-cormorant text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
             {content.articles_title || "Latest from The Bali Club"}
           </h2>
           <p className="text-gray-300 text-base md:text-lg font-sans">

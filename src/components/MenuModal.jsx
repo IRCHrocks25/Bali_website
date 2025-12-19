@@ -23,7 +23,7 @@ const MenuModal = ({ isOpen, onClose }) => {
             className="relative bg-card text-foreground rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-border"
           >
             <div className="sticky top-0 bg-card/80 backdrop-blur-sm z-10 flex items-center justify-between p-6 border-b border-border">
-              <h3 className="font-cormorant text-3xl font-medium">
+              <h3 className="font-playfair text-3xl font-medium">
                 Our Menu
               </h3>
                <button
@@ -44,7 +44,7 @@ const MenuModal = ({ isOpen, onClose }) => {
                   transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
                   className="mb-10"
                 >
-                  <h4 className="font-cormorant text-2xl font-medium text-primary mb-6">
+                  <h4 className="font-playfair text-2xl font-medium text-primary mb-6">
                     {category.category}
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">

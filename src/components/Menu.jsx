@@ -97,7 +97,7 @@ const Menu = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="text-5xl md:text-6xl font-cormorant font-bold text-primary mb-2">
+        <h2 className="text-5xl md:text-6xl font-playfair font-bold text-primary mb-2">
           {content?.menu_title || 'Our Menu'}
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -169,7 +169,7 @@ const Menu = () => {
       >
         {menuCategories.map((category) => (
           <motion.div key={category} variants={itemVariants}>
-            <h3 className="text-3xl font-cormorant font-semibold text-primary-foreground mb-6 border-b-2 border-primary pb-2">
+            <h3 className="text-3xl font-playfair font-semibold text-primary-foreground mb-6 border-b-2 border-primary pb-2">
               {category}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">

@@ -62,7 +62,7 @@ const HeroSection = () => {
             </div>
 
             {/* Main Content - Center/Lower */}
-            <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-8 md:px-12 pb-0">
+            <div className="relative z-20 flex flex-col items-center justify-end min-h-screen px-8 md:px-12 pb-16 md:pb-20 lg:pb-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -103,7 +103,7 @@ const HeroSection = () => {
             </div>
 
             {/* Image Collage Section - Seamlessly connected */}
-            <div className="relative z-20 w-full bg-[#000000] -mt-40 md:-mt-48 lg:-mt-56">
+            <div className="relative z-20 w-full bg-[#000000] -mt-8 md:-mt-10 lg:-mt-12">
                 <div className="w-full">
                     <div className="grid grid-cols-4 sm:grid-cols-8 gap-1 md:gap-2">
                         {images.map((image, index) => (

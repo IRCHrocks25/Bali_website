@@ -40,7 +40,7 @@ const Footer = ({ content }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-semibold font-cormorant mb-4">{content.footer_title}</h3>
+            <h3 className="text-xl font-semibold font-playfair mb-4">{content.footer_title}</h3>
             <p className="text-sm text-foreground/70 max-w-xs">
               {content.footer_subtitle}
             </p>

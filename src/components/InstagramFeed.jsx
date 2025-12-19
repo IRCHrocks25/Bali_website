@@ -55,7 +55,7 @@ const InstagramFeed = () => {
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <Instagram className="h-8 w-8 text-[#C9A24D]" />
-            <h2 className="font-cormorant text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+            <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-white">
               Follow Our Journey
             </h2>
           </div>

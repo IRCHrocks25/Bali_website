@@ -57,7 +57,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-cormorant font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-4">
             {content.contact_title || 'Get In Touch'}
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">

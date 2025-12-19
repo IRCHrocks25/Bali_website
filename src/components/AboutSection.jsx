@@ -72,7 +72,7 @@ const AboutSection = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="font-cormorant font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-6 md:mb-8 text-white">
+            <h2 className="font-playfair font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-6 md:mb-8 text-white">
               Born from Passion,
               <br />
               Crafted with Soul

@@ -117,6 +117,26 @@
     background-color: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
   }
+  
+  /* Prevent orphan words in paragraphs */
+  p {
+    orphans: 2;
+    widows: 2;
+    text-wrap: pretty;
+  }
+  
+  /* Prevent orphan words in headings and other text elements */
+  h1, h2, h3, h4, h5, h6 {
+    orphans: 2;
+    widows: 2;
+    text-wrap: pretty;
+  }
+  
+  /* For longer text blocks */
+  .text-block, article, section {
+    orphans: 2;
+    widows: 2;
+  }
   .font-cormorant {
     font-family: 'Cormorant', serif;
   }

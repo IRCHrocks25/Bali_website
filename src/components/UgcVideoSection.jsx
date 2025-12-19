@@ -27,12 +27,24 @@ const UgcVideoSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-cormorant font-bold text-primary mb-4">
-            {content.ugc_title || 'Experience The Vibe'}
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {content.ugc_subtitle || 'See what makes us special'}
-          </p>
+          <motion.h2 
+            className="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-4 drop-shadow-2xl"
+            initial={{ scale: 0.95 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
+            viewport={{ once: true }}
+          >
+            {content.ugc_title || 'The Vibe'}
+          </motion.h2>
+          <motion.p 
+            className="text-xl md:text-2xl text-white font-sans font-medium max-w-2xl mx-auto drop-shadow-lg"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            {content.ugc_subtitle || 'Step inside and feel the energy. This is The Club Bali.'}
+          </motion.p>
         </motion.div>
 
         <motion.div

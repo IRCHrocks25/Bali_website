@@ -56,7 +56,7 @@ const Preloader = () => {
         variants={textVariants}
         initial="initial"
         animate="animate"
-        className="font-cormorant text-4xl md:text-5xl text-foreground tracking-wider overflow-hidden"
+        className="font-playfair text-4xl md:text-5xl text-foreground tracking-wider overflow-hidden"
       >
         {title.split('').map((letter, index) => (
           <motion.span
