@@ -21,7 +21,16 @@ const ReviewsSection = () => {
 
       const hydrateFromGoogle = async () => {
         try {
-          const res = await fetch('/google-reviews.json', { cache: 'no-store' });
+          // Add timestamp to cache-bust and ensure fresh data
+          const timestamp = new Date().getTime();
+          const res = await fetch(`/google-reviews.json?t=${timestamp}`, { 
+            cache: 'no-store',
+            headers: {
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Pragma': 'no-cache',
+              'Expires': '0'
+            }
+          });
 
           if (!res.ok) {
             return false;
@@ -32,14 +41,22 @@ const ReviewsSection = () => {
             return false;
           }
 
+          // Sort reviews by time (most recent first) if time field exists
+          const sortedReviews = [...data.reviews].sort((a, b) => {
+            const timeA = a.time || 0;
+            const timeB = b.time || 0;
+            return timeB - timeA; // Descending order (newest first)
+          });
+
           setReviews(
-            data.reviews.map((review) => ({
+            sortedReviews.map((review) => ({
               id: review.id,
               author_name: review.author_name,
               profile_photo_url: review.profile_photo_url,
               rating: review.rating,
               relative_time_description: review.relative_time_description,
               text: review.text,
+              time: review.time, // Keep time for sorting
             }))
           );
           setMeta({
