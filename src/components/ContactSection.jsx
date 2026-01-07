@@ -16,7 +16,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: 'Address',
-      value: content.contact_address || 'Jl Batubelig Gang Daksina No 1, Kerobokan Kelod, Kuta Utara, Bali.',
+      value: 'The Club Bali - Le Restaurant, Jl. Batu Belig Gg. Daksina No.1, Kerobokan, Kuta Utara, Badung Regency, Bali 80361, Indonesia',
     },
     {
       icon: Phone,
@@ -37,7 +37,7 @@ const ContactSection = () => {
 
   const mapEmbedUrl =
     content.contact_map_embed_url ||
-    'https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126214.64971260416!2d115.06457907798894!3d-8.671778268076944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2dd247f71f5aefe7%3A0xd9a780c6d8cb66a4!2sJl.%20Batu%20Belig%20Gg.%20Daksina%20No.1%2C%20Kerobokan%2C%20Kec.%20Kuta%20Utara%2C%20Kabupaten%20Badung%2C%20Bali%2080361%2C%20Indonesia!3m2!1d-8.6717871!2d115.146981!5e0!3m2!1sen!2sph!4v1763059123491!5m2!1sen!2sph';
+    'https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15776.588806733329!2d115.1459455!3d-8.6775484!3m2!1i1024!2i768!4f13.1!2m1!1sthe%20club%20bali!5e0!3m2!1sen!2sch!4v1767801762877!5m2!1sen!2sch';
 
   return (
     <section 
