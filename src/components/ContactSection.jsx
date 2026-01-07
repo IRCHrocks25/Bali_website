@@ -16,17 +16,17 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: 'Address',
-      value: content.contact_address || 'Bali, Indonesia',
+      value: content.contact_address || 'Jl Batubelig Gang Daksina No 1, Kerobokan Kelod, Kuta Utara, Bali.',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: content.contact_phone || '+62 XXX XXX XXX',
+      value: '+62 823-4249-2401',
     },
     {
       icon: Mail,
       label: 'Email',
-      value: content.contact_email || 'info@theclubali.com',
+      value: content.contact_email || 'bookings@theclubbali.com',
     },
     {
       icon: Clock,

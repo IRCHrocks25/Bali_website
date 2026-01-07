@@ -53,25 +53,17 @@ const UgcVideoSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 100, damping: 15 }}
           viewport={{ once: true }}
-          className="relative max-w-6xl lg:max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-2xl group cursor-pointer"
+          className="relative max-w-6xl lg:max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-2xl group"
           whileHover={{ y: -10, scale: 1.02 }}
         >
-          <motion.img
-            src={content.ugc_image_url || 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200'}
-            alt="Video Thumbnail"
+          <video
+            src="/video/copy_40D3AEBF-335E-4CDB-B941-53B43D877C84.mov"
             className="w-full h-auto aspect-video object-cover"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            autoPlay
+            loop
+            muted
+            playsInline
           />
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center transition-all duration-300 group-hover:bg-black/50">
-            <motion.div 
-              className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center"
-              whileHover={{ scale: 1.15, rotate: 90 }}
-              transition={{ type: "spring", stiffness: 300, damping: 15 }}
-            >
-              <Play className="h-10 w-10 text-white ml-1" fill="white" />
-            </motion.div>
-          </div>
         </motion.div>
       </div>
     </section>
