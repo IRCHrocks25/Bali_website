@@ -26,7 +26,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: content.contact_email || 'bookings@theclubbali.com',
+      value: 'bookings@theclubbali.com',
     },
     {
       icon: Clock,
