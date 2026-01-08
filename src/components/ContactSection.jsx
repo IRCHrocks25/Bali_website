@@ -30,8 +30,8 @@ const ContactSection = () => {
     },
     {
       icon: Clock,
-      label: content.contact_hours || 'Hours',
-      value: content.contact_hours_desc || 'Open Daily',
+      label: 'Hours',
+      value: 'Open Tuesday to Sunday at 9am to 11pm, Monday closed',
     },
   ];
 
