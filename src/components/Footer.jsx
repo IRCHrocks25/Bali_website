@@ -27,7 +27,7 @@ const Footer = ({ content }) => {
   };
   
   const currentYear = new Date().getFullYear();
-  const copyrightText = content.footer_copyright ? content.footer_copyright.replace('{year}', currentYear) : `© ${currentYear} The Club Bali. All rights reserved.`;
+  const copyrightText = content.footer_copyright ? content.footer_copyright.replace('{year}', currentYear) : `© ${currentYear} All rights reserved.`;
 
   return (
     <footer className="bg-card text-foreground border-t border-border relative">
@@ -40,7 +40,11 @@ const Footer = ({ content }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-semibold font-playfair mb-4">{content.footer_title}</h3>
+            <img 
+              src="/images/hero/bali_club_logo.png" 
+              alt="The Club Bali" 
+              className="h-20 md:h-24 lg:h-28 w-auto mb-4 object-contain"
+            />
             <p className="text-sm text-foreground/70 max-w-xs">
               {content.footer_subtitle}
             </p>
