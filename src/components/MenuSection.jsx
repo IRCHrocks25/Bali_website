@@ -21,12 +21,12 @@ const MenuSection = ({ onMenuClick }) => {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-16 lg:mb-20"
         >
-          <p className="font-cormorant text-white italic text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 md:mb-5 lg:mb-6 leading-relaxed">
+          <p className="font-script text-white italic text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 md:mb-5 lg:mb-6 leading-relaxed">
             "The perfect place to hang out with friends!
             <br />
             The Club Bali has it all."
           </p>
-          <p className="font-cormorant text-[#E8D9A8] italic text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+          <p className="font-script text-[#E8D9A8] italic text-xl md:text-2xl lg:text-3xl xl:text-4xl">
             Maxine de Francesco
           </p>
         </motion.div>
@@ -51,7 +51,7 @@ const MenuSection = ({ onMenuClick }) => {
             </div>
 
             {/* Heading */}
-            <h2 className="font-playfair font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-6 md:mb-8 text-white">
+            <h2 className="font-script font-semibold text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] mb-6 md:mb-8 text-white">
               French Technique,
               <br />
               Balinese Soul

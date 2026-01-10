@@ -70,7 +70,7 @@ const HeroSection = () => {
                     className="text-center space-y-2 md:space-y-3 max-w-5xl"
                 >
                     {/* Main Headline - Overlaying center/lower area */}
-                    <h1 className="font-playfair text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[5.5rem] font-light text-white leading-tight whitespace-nowrap">
+                    <h1 className="font-script text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[5.5rem] font-light text-white leading-tight whitespace-nowrap">
                         {content?.hero_title || "Where Bali Meets Paradise"}
                     </h1>
 

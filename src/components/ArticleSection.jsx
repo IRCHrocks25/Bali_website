@@ -163,7 +163,7 @@ const ArticleSection = () => {
             },
           }}
         >
-          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
+          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
             {content.articles_title || "Latest from The Bali Club"}
           </h2>
           <p className="text-gray-300 text-base md:text-lg font-sans">

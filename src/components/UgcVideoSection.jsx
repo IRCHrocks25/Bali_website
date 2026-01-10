@@ -29,7 +29,7 @@ const UgcVideoSection = () => {
           className="text-center mb-12"
         >
           <motion.h2 
-            className="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-4 drop-shadow-2xl"
+            className="text-5xl md:text-6xl lg:text-7xl font-script font-bold text-white mb-4 drop-shadow-2xl"
             initial={{ scale: 0.95 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.5, type: "spring", stiffness: 200 }}

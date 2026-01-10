@@ -160,7 +160,7 @@ const ExclusiveEventsSection = () => {
           </div>
 
           {/* Main title */}
-          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.06] tracking-[-0.02em]">
+          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.06] tracking-[-0.02em]">
             Your Night Out. Elevated.
           </h2>
 
@@ -251,7 +251,7 @@ const ExclusiveEventsSection = () => {
 
                     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
                       <div>
-                        <p className="font-playfair text-2xl md:text-3xl font-semibold text-white leading-tight">
+                        <p className="font-script text-2xl md:text-3xl font-semibold text-white leading-tight">
                           {active.title}
                         </p>
                         <p className="mt-1 text-sm md:text-base text-white/70">

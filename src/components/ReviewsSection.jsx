@@ -122,7 +122,7 @@ const ReviewsSection = () => {
           className="text-center mb-12 md:mb-16"
         >
           {/* Main Title */}
-          <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-playfair font-bold text-white mb-8 md:mb-10">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-script font-bold text-white mb-8 md:mb-10">
             Reviews & Raves
           </h2>
 
