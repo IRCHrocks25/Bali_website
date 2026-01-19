@@ -1,5 +1,5 @@
-// Auto-import all JSON files in this directory
-const articleModules = import.meta.glob("./*.json", { eager: true });
+// Auto-import all JSON files in this directory and subdirectories
+const articleModules = import.meta.glob("./**/*.json", { eager: true });
 
 export const staticArticles = Object.values(articleModules)
   .map((module) => module.default)
