@@ -43,7 +43,7 @@ const Menu = () => {
         'Explore the latest culinary creations from our chef.',
       url:
         content?.menu_pdf_primary_url ||
-        'https://res.cloudinary.com/dcuswyfur/image/upload/v1763057740/New_Menu_Food_A3_-2_qg42to.pdf',
+        'https://cdn.katalyst-crm.com/t1/cloudinary/New_Menu_Food_A3_-2_qg42to.pdf',
       cta: content?.menu_pdf_primary_cta || 'Download Menu',
     },
     {
@@ -53,7 +53,7 @@ const Menu = () => {
         'Sip and savor our lounge favourites and handcrafted cocktails.',
       url:
         content?.menu_pdf_secondary_url ||
-        'https://res.cloudinary.com/dcuswyfur/image/upload/v1763057741/menu_12_h2hnfu.pdf',
+        'https://cdn.katalyst-crm.com/t1/cloudinary/menu_12_h2hnfu.pdf',
       cta: content?.menu_pdf_secondary_cta || 'View Menu',
     },
   ].filter((card) => Boolean(card.url));
